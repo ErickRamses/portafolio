@@ -3,7 +3,11 @@ import './App.css';
 import { Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
+
+
 function App() {
+
+
   return (
     <div >
       <div className="App">
@@ -20,11 +24,17 @@ function App() {
        
 
       </div>
+      <div className='blur'>
+
+      </div>
       <div className='body'>
+        <br></br>
+        make triangle 📐
         what i can do xd egtegnologies<br></br>
         logo <br></br>
         logo <br></br><br></br>                  
-        proyets
+        proyets add flex or grid?
+        grid better and one img per columsn ?
         <br></br>
         
         <Card style={{ width: '320px',border:"0px" }} className="shadow">
