@@ -1,0 +1,128 @@
+@import "./skills";
+
+.App{
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: -1;
+    color: #ccd6f6;
+  }
+  .Back{
+    
+    
+    height: 110vh;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background:linear-gradient(0.25turn, #0a192f, #233554,#233554, #0a192f,#0a192f);
+    background-size:300vw;
+    animation-name: backg;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction:normal;
+    
+  }
+  .arrow-up {
+    position: absolute;
+    top: 101vh;
+    width: 100%;
+    height: 10vh;
+    background: rgb(208, 248, 252);
+    clip-path: polygon(0% 12%, 0% 100%, 100% 100%);
+  }
+  /* .blur{
+    
+    width: 100%;
+    height: 6vh;
+    opacity: 1;
+    position: absolute;
+    top: 95vh;
+    backdrop-filter:  blur(1px);
+  } */
+  .Header{
+    font-size: 1em;
+    color: #64ffda;
+    opacity: 0;
+    animation-name: example;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+    
+  }
+  .Header1{
+    color: rgba(255, 255, 255, 0.508);
+    
+    font-size: 2em;
+    opacity: 0;
+    animation-name: example;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-delay: 1.25s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+  }
+  .Header2{
+    color: rgb(255, 255, 255);
+
+    font-size: 2.25em;
+    opacity: 0;
+    animation-name: example;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-delay: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+  }
+  .Header3{
+    color: rgba(255, 255, 255, 0.486);
+
+    font-size: 2em;
+    opacity: 0;
+    animation-name: example;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-delay: 1.75s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+  }
+  .body{
+    text-align: center;
+    background-color: rgb(208, 248, 252);
+    color: rgb(0, 0, 0);
+    height: 1000px;
+    width: 100%;
+   
+  }
+  @keyframes example {
+    0%{
+      opacity: 0;
+      transform: translate3d(0,0,0);
+    }
+    100% {
+          opacity: 1;
+      transform: translate3d(0,-5vh,0);
+  
+    }
+  }
+  @keyframes backg {
+    0%{
+      background-position: 0%;
+      
+    }
+    100% {
+      background-position: 300%;
+  
+    }
+  }
