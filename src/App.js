@@ -26,8 +26,8 @@ function App() {
         <div>
           <div className='Header'>Hi, my name is</div>
           <div className='Header1'>Erick Ramses</div>
+          <div className='Header3'>passionate problem solver &</div>
           <div className='Header2'>Web developer</div>
-          <div className='Header3'>passionate problem solver</div>
         </div>
 
        
@@ -39,7 +39,9 @@ function App() {
         <br></br><br></br>
         <br></br><br></br>
         <br></br>
-          My skills:
+          My current skills:
+          <br></br>
+          <br></br>
         <div style={{gap:"10px"}} className='d-flex flex-wrap justify-content-center'>
           <div><img className='imagen' src={html5}></img><div style={{textAlign:"center"}}>html5</div></div>
           <div><img className='imagen' src={css3}></img><div style={{textAlign:"center"}}>Css3</div></div>
@@ -48,33 +50,15 @@ function App() {
           <div><img className='imagenround' src={reactrouterl}></img><div style={{textAlign:"center"}}>React Router</div></div>
           <div><img className='imagen' src={bootstrap}></img><div style={{textAlign:"center"}}>Bootstrap</div></div>
           <div><img className='imagen' src={sass}></img><div style={{textAlign:"center"}}>Sass</div></div>
-          <div><img className='imagen' src={git}></img><div style={{textAlign:"center"}}>Git</div></div>
-        
-                
-                         
-                          
-                          
-         
-         
-                          
-                          
-                       
+          <div><img className='imagen' src={git}></img><div style={{textAlign:"center"}}>Git</div></div>               
         </div>
-
+          My projects
         <br></br>
+        <div style={{gap:"10px"}} className='d-flex flex-wrap justify-content-center'>
+          <div style={{background:"gray"}}><img className='imagen' src={html5}></img><div style={{textAlign:"center"}}>video istead an here description</div></div>
+         
+        </div>
         
-        <Card style={{ width: '320px',border:"0px" }} className="shadow">
-      <Card.Img variant="top" src="https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2017/03/space_debris/16871919-3-eng-GB/Space_Debris_pillars.jpg" />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content. 
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-        <Button variant="primary">git hub</Button>
-      </Card.Body>
-    </Card>
       </div>
       </div>
     
