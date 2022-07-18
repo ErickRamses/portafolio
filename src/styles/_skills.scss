@@ -1,7 +1,38 @@
+
+.Aboutme{
+    background-color:#233554;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.5em;
+    padding-bottom: 50px;
+}
+.Skills{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color:rgb(51, 78, 125);
+
+    color: white;
+}
 .imagen{
     width: 90px;
 }
 .imagenround{
     width: 90px;
     border-radius: 20px;
+}
+.video{
+    width: 320px;
+}
+.Myprojects{
+    position: relative;
+    top: -10vh;
+    color: white;
+    background-color:#42619b
+}
+.hov:hover{
+    color: aquamarine;
 }
