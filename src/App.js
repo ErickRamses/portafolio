@@ -12,56 +12,12 @@ import bootstrap from "./imagen/bootstrap-icon.png"
 import sass from "./imagen/sass-icon.png"
 import git from "./imagen/git-icon.png"
 import code from "./imagen/pexels-pixabay-270366 (2).jpg"
-import { useEffect,useRef } from 'react';
 import Canvas from './componets/Canvas';
 
 
-  let x;
-  let y;
+  
 function App() {
-  const canvasRef = useRef(null)
-  let ctx;
-  useEffect(() => {
-    ctx = canvasRef.current.getContext('2d')
-    canvasRef.current.height=window.innerHeight;
-    canvasRef.current.width=document.body.scrollWidth;
-    
-    let time =setInterval(space,1000/60)
-    // do something here with the canvas
-  }, [])
-  window.addEventListener('resize',()=>{
-    canvasRef.current.height=window.innerHeight;
-    canvasRef.current.width=document.body.scrollWidth;
-    ctx.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height);    
-})
-
-
-  function mosemove(e){
-    x=e.nativeEvent.offsetX
-    y=e.nativeEvent.offsetY
-    console.log(e)
-    //ctx.fillStyle = '#000000'
-    //ctx.beginPath()
-    //ctx.arc(e.clientX,e.clientY , 20, 0, 2*Math.PI)
-    //ctx.fill()
-   // console.log(e.clientX)
-   
-   console.log(x)
-   console.log(canvasRef.current.width)
-   console.log(y)
-   console.log(canvasRef.current.height)
-}
-  function space(){
-    
-    ctx.beginPath();
-    ctx.arc(x, y, 2, 0, 2 * Math.PI);
-    ctx.fillStyle = 'yellow';
-    ctx.fill()
-    
-
-    //clear here
-
-  }
+  
 
 
   return (
@@ -71,18 +27,18 @@ function App() {
       
       <div className="App">
         <div  className='Back' ></div>
-        <div style={{padding:"20px"}}>
+
+        <div style={{padding:"20px",zIndex:"1000"}}>
           <div className='Header'>Hi, my name is //might do it relative and that way over? canvas ???</div>
           <div className='Header1'>Erick Ramses</div>
           <div className='Header3'>passionate problem solver &</div>
           <div className='Header2'>Web developer</div>
         </div>
-
        
 
       </div>
         <Canvas></Canvas>
-        <canvas style={{position:"absolute",width:"100%",height:"100vh",zIndex:"100",top:"10px"}} className='canvas' ref={canvasRef} onMouseMove={(e)=>{mosemove(e)}}></canvas>
+        
       <div className='arrow-up'></div>
       <div className='body'>
       <br></br>
