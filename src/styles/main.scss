@@ -8,20 +8,16 @@
     width: 100%;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: -1;
     color: #ccd6f6;
   }
-  // .canvas{
-  //   background-color: #0a192f;
-  //   width: 10px;
-  // }
   .Back{
     
     
     height: 110vh;
     width: 100%;
     position: absolute;
-    z-index: 10;
+    z-index: -1;
     background:linear-gradient(0.25turn, #0a192f, #233554,#233554, #0a192f,#0a192f);
     background-size:300vw;
     animation-name: backg;
@@ -102,7 +98,7 @@
     animation-name: example;
     animation-duration: .5s;
     animation-timing-function: linear;
-    animation-delay: 1.5s;
+    animation-delay: 1.75s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     
@@ -115,7 +111,7 @@
     animation-name: example;
     animation-duration: .5s;
     animation-timing-function: linear;
-    animation-delay: 1.75s;
+    animation-delay: 1.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     

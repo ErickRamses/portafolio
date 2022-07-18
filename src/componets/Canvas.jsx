@@ -9,14 +9,14 @@ const Canvas = () => {
   let ctx;
   useEffect(() => {
     ctx = canvasRef.current.getContext('2d')
-    canvasRef.current.height=window.innerHeight;
+    canvasRef.current.height=window.innerHeight*1.1;
     canvasRef.current.width=document.body.scrollWidth;
     
     let time =setInterval(space,1000/60)
     // do something here with the canvas
   }, [])
   window.addEventListener('resize',()=>{
-    canvasRef.current.height=window.innerHeight;
+    canvasRef.current.height=window.innerHeight*1.1;
     canvasRef.current.width=document.body.scrollWidth;
     ctx.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height);    
 })
@@ -90,7 +90,7 @@ const Canvas = () => {
     }
     force(z){
         //massssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
-        return (suns[z].massa/(this.distance(z)**2))    
+        return (suns[z].massa/-(this.distance(z)**2))    
     }
     acelerationY(){
         //here sum
@@ -143,8 +143,8 @@ const Canvas = () => {
         ctx.fillStyle = "yelow";
 
         if(this.alive){
-            ctx.fillStyle = 'yellow';
-
+            
+            ctx.fillStyle = 'gray';
         }else{
             ctx.fillStyle = "purple";
          }
@@ -162,7 +162,7 @@ class sun{
         this.vx=vx
         this.vy=vy
         this.alive=true
-        this.radio=Math.log2(Math.abs(massa)+2)+5
+        this.radio=Math.log2(Math.abs(massa)+2)+10
         
         //here logaritmic
 
@@ -276,8 +276,8 @@ class sun{
     }
     
 }
-suns[0]=new sun(0,200,-2010,200,1,0)
-for(let i=0;i<100;i++){
+suns[0]=new sun(0,125,-2010,200,1,0)
+for(let i=0;i<200;i++){
     planets.push(new planet(i,Math.floor(Math.random() * (document.body.scrollWidth - 0) + 0),i*(window.innerHeight/100),0,0))
    // planets.push(new planet(i,100,i*(window.innerHeight/100),0,0))
    //Math.floor(Math.random() * (document.body.scrollWidth - 0 + 1) + 0);
@@ -287,7 +287,7 @@ for(let i=0;i<100;i++){
 
 
   return (
-    <canvas style={{position:"absolute",width:"100%",height:"100vh",zIndex:"100",top:"10px"}} className='canvas' ref={canvasRef} onMouseMove={(e)=>{mosemove(e)}}></canvas>
+    <canvas style={{zIndex:"10000", position:"absolute",width:"100%",height:"110vh",zIndex:"100",top:"10px"}} className='canvas' ref={canvasRef} onMouseMove={(e)=>{mosemove(e)}}></canvas>
   )
 }
 

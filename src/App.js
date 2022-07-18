@@ -1,6 +1,6 @@
 
 import './styles/main.css';
-import { Button, Container } from 'react-bootstrap';
+import { Button, Container, Navbar } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 import html5 from "./imagen/html5.png"
@@ -13,6 +13,7 @@ import sass from "./imagen/sass-icon.png"
 import git from "./imagen/git-icon.png"
 import code from "./imagen/pexels-pixabay-270366 (2).jpg"
 import Canvas from './componets/Canvas';
+import Nav from './componets/Nav';
 
 
   
@@ -26,15 +27,15 @@ function App() {
     <div >
       
       <div className="App">
-        <div  className='Back' ></div>
-
         <div style={{padding:"20px",zIndex:"1000"}}>
-          <div className='Header'>Hi, my name is //might do it relative and that way over? canvas ???</div>
+          <div className='Header'>Hi, my name is </div>
           <div className='Header1'>Erick Ramses</div>
           <div className='Header3'>passionate problem solver &</div>
           <div className='Header2'>Web developer</div>
         </div>
        
+        <div  className='Back' ></div>
+
 
       </div>
         <Canvas></Canvas>
@@ -42,22 +43,24 @@ function App() {
       <div className='arrow-up'></div>
       <div className='body'>
       <br></br>
-        
+       
         <div className='Aboutme'>
           <div style={{maxWidth:"1000px"}}>
 
-          <u>About</u> me: <br></br>
-          Hello i'm Erick Ramses  a Mexican web developer looking for an opportunity to show my potential
+          <u>About</u> me: diveit pls<br></br>
+          Hello i'm Erick Ramses a Mexican web developer looking for an opportunity to show my potential
           ,i love solving problems and if it is difficult, the better :) I'm learning new things every day and  im expanding my skill set by learning Nodejs & Mongodb
           </div>
-          <img style={{width:"50%"}} src={code}></img>
+          <img style={{width:"50%",minWidth:"320px"}} src={code}></img>
         </div>
       <div className='arrow-up2'></div>
         
         <div className='Skills'>
-            <div style={{fontSize:"1.5em"}}>My current <u>skills</u>:</div>
+            <div style={{fontSize:"1.5em"}}>My current <u>skills</u>:<br></br>
             
-            im proficient in these tecnologies i can solve most of the problems if im stcuk in a situation i can investigate the solution and if dont find it its a pleacent challenge  
+            I am proficient in these technologies. I can solve most problems. If I'm stuck in a situation, I can research the solution, and if I don't find it, it's a nice challenge to solve. 
+            </div>
+            
             <br></br>
             <br></br>
 
@@ -77,7 +80,8 @@ function App() {
         <div className='Myprojects'>
         <br></br>
         <br></br>
-        
+        <br></br>
+        <br></br>
             My projects
           <br></br>
           <div style={{gap:"10px" }} className='d-flex flex-wrap justify-content-center'>
