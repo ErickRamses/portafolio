@@ -12,17 +12,27 @@ import bootstrap from "./imagen/bootstrap-icon.png"
 import sass from "./imagen/sass-icon.png"
 import git from "./imagen/git-icon.png"
 import code from "./imagen/pexels-pixabay-270366 (2).jpg"
+import { useEffect,useRef } from 'react';
 
 function App() {
-
-
+  const canvasRef = useRef(null)
+  
+  useEffect(() => {
+    const ctx = canvasRef.current.getContext('2d')
+    ctx.fillStyle = '#000000'
+    ctx.beginPath()
+    ctx.arc(50, 100, 20, 0, 2*Math.PI)
+    ctx.fill()
+    // do something here with the canvas
+  }, [])
+  
   return (
     //title  skills canvas 🙏  navar 
     <div >
       
       <div className="App">
 
-        <canvas className='Back'></canvas>
+        <canvas ref={canvasRef} className='Back'></canvas>
         <div style={{padding:"20px"}}>
           <div className='Header'>Hi, my name is //might do it relative and that way over? canvas ???</div>
           <div className='Header1'>Erick Ramses</div>
