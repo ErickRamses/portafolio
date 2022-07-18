@@ -11,6 +11,10 @@
 }
 
 .Skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: rgb(51, 78, 125);
@@ -193,7 +197,6 @@
   text-align: center;
   background-color: #233554;
   color: rgb(0, 0, 0);
-  height: 1000px;
   width: 100%;
 }
 

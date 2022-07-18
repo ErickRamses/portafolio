@@ -24,6 +24,7 @@ function App() {
   return (
     //title  skills canvas 🙏  navar 
     //lets add planets but first canvas in other componet lol
+    //fix proyects then video and description
     <div >
       
       <div className="App">
@@ -45,19 +46,23 @@ function App() {
       <br></br>
        
         <div className='Aboutme'>
-          <div style={{maxWidth:"1000px"}}>
+          <div style={{maxWidth:"500px"}}>
 
-          <u>About</u> me: diveit pls<br></br>
+          <span style={{fontSize:"1.3em"}}>
+          <u>About</u> me:<br></br>
+          </span>
           Hello i'm Erick Ramses a Mexican web developer looking for an opportunity to show my potential
           ,i love solving problems and if it is difficult, the better :) I'm learning new things every day and  im expanding my skill set by learning Nodejs & Mongodb
           </div>
-          <img style={{width:"50%",minWidth:"320px"}} src={code}></img>
+          <img style={{width:"80%",minWidth:"320px",maxWidth:"1000px"}} src={code}></img>
         </div>
       <div className='arrow-up2'></div>
         
         <div className='Skills'>
-            <div style={{fontSize:"1.5em"}}>My current <u>skills</u>:<br></br>
-            
+            <div style={{fontSize:"1.5em",maxWidth:"1000px"}}>
+          <span style={{fontSize:"1.3em"}}>
+              My current <u>skills</u>:<br></br>
+          </span>
             I am proficient in these technologies. I can solve most problems. If I'm stuck in a situation, I can research the solution, and if I don't find it, it's a nice challenge to solve. 
             </div>
             
