@@ -277,7 +277,7 @@ class sun{
     
 }
 suns[0]=new sun(0,125,-2010,200,1,0)
-for(let i=0;i<200;i++){
+for(let i=0;i<100;i++){
     planets.push(new planet(i,Math.floor(Math.random() * (document.body.scrollWidth - 0) + 0),i*(window.innerHeight/100),0,0))
    // planets.push(new planet(i,100,i*(window.innerHeight/100),0,0))
    //Math.floor(Math.random() * (document.body.scrollWidth - 0 + 1) + 0);
