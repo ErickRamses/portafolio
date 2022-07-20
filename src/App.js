@@ -54,7 +54,7 @@ function App() {
           Hello i'm Erick Ramses a self taught web developer looking for an opportunity to show my potential
           ,i love solving problems and if it is difficult, the better :) I'm learning new things every day and  im expanding my skill set by learning Nodejs & Mongodb
           </div>
-          <img style={{width:"80%",minWidth:"320px",maxWidth:"1000px"}} src={code}></img>
+         
         </div>
       <div className='arrow-up2'></div>
         

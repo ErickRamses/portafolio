@@ -12,7 +12,7 @@ const Canvas = () => {
     canvasRef.current.height=window.innerHeight*1.1;
     canvasRef.current.width=document.body.scrollWidth;
     
-    let time =setInterval(space,1000/30)
+    let time =setInterval(space,1000/60)
     // do something here with the canvas
   }, [])
   window.addEventListener('resize',()=>{
@@ -52,7 +52,8 @@ const Canvas = () => {
     
     for(let i=0;i<planets.length;i++){
         planets[i].minipaint()
-        planets[i].begin()       
+        planets[i].begin()   
+        //suns[0].minipaint()    
     }
     //clear here
 
@@ -276,9 +277,9 @@ class sun{
     }
     
 }
-suns[0]=new sun(0,250,-2010,200,1,0)
-for(let i=0;i<50;i++){
-    planets.push(new planet(i,Math.floor(Math.random() * (document.body.scrollWidth - 0) + 0),i*(window.innerHeight/50),0,0))
+suns[0]=new sun(0,125,-2010,200,1,0)
+for(let i=0;i<200;i++){
+    planets.push(new planet(i,Math.floor(Math.random() * (document.body.scrollWidth - 0) + 0),i*(window.innerHeight/200),0,0))
    // planets.push(new planet(i,100,i*(window.innerHeight/100),0,0))
    //Math.floor(Math.random() * (document.body.scrollWidth - 0 + 1) + 0);
     //console.log(Math.floor(Math.random() * (document.body.scrollWidth - 0) + 0))
