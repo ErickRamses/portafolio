@@ -12,7 +12,7 @@ const Canvas = () => {
     canvasRef.current.height=window.innerHeight*1.1;
     canvasRef.current.width=document.body.scrollWidth;
     
-    let time =setInterval(space,1000/30)
+    let time =setInterval(space,1000/60)
     // do something here with the canvas
   }, [])
   window.addEventListener('resize',()=>{

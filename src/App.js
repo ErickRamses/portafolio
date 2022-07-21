@@ -14,7 +14,9 @@ import git from "./imagen/git-icon.png"
 import code from "./imagen/pexels-pixabay-270366 (2).jpg"
 import Canvas from './componets/Canvas';
 import Nav from './componets/Nav';
+import Projects from './componets/Projects';
 
+import { Link } from "react-router-dom";
 
   
 function App() {
@@ -90,11 +92,17 @@ function App() {
             My projects:
           <br></br>
           <div style={{gap:"10px" }} className='d-flex flex-wrap justify-content-center'>
-            import app then link then description then video
-            <div style={{background:"gray"}}><img className='video' src={html5}></img><div style={{textAlign:"center"}}><a href='apps/grav/in2dex.html'>asas</a> video istead not refind an here description</div></div>
-            <div style={{background:"gray"}}><img className='video' src={html5}></img><div style={{textAlign:"center"}}>video istead not refind an here description</div></div>
+            import app then link for all then then description then video
+            <Projects></Projects>
+            <div style={{background:"gray"}}><img className='video' src={html5}></img><div style={{textAlign:"center"}}><Link target="_blank" to="/Grav">About</Link>asas video istead not refind an here description</div></div>
+
+
+
             <div style={{background:"gray"}}><img className='video' src={html5}></img><div style={{textAlign:"center"}}>video istead not refind an here description</div></div>
 
+
+            <div style={{background:"gray"}}><img className='video' src={html5}></img><div style={{textAlign:"center"}}>video istead not refind an here description</div></div>
+            
           </div>
           
         </div>
