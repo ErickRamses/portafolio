@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import App2 from "./appsl/ApiCountries/App2"
+
 import reportWebVitals from './reportWebVitals';
 import {
     BrowserRouter,
@@ -9,6 +11,7 @@ import {
     Route,
   } from "react-router-dom";
 import Grav from './appsl/grav/Grav';
+import Country from "./appsl/ApiCountries/componets/Country"
 //import Grav from './apps/grav/Grav';
 
 
@@ -18,10 +21,11 @@ root.render(
     <BrowserRouter>
     <Routes>
       <Route path="/portafolio" element={<App />}> </Route>
-      <Route path="/" element={<Grav/>}> </Route>
+      <Route path="/" element={<App2/>}> </Route>
       <Route path="/Grav" element={<Grav/>}> </Route>
-      
-      
+      <Route path="/ApiCountries" element={<App2/>}> </Route>
+      <Route path="/country/:name" element={<Country/>} />
+
     </Routes>
   </BrowserRouter>
   
