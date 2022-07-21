@@ -8,16 +8,19 @@ import {
     Routes,
     Route,
   } from "react-router-dom";
+import Grav from './apps/grav/Grav';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />}>
-        
-        
-      </Route>
+      <Route path="/" element={<Grav/>}> </Route>
+      <Route path="/portafolio" element={<App />}> </Route>
+      <Route path="/Grav" element={<Grav/>}> </Route>
+
+      
     </Routes>
   </BrowserRouter>
   
