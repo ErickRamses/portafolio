@@ -89,7 +89,7 @@ function App() {
         <br></br>
         <br></br>
         <br></br>
-            My projects:
+             Some of my projects:
           <br></br>
           <div style={{gap:"10px" }} className='d-flex flex-wrap justify-content-center'>
             import app then link for all then then description then video

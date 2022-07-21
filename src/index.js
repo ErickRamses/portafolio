@@ -10,7 +10,7 @@ import {
     Routes,
     Route,
   } from "react-router-dom";
-import Grav from './appsl/grav2/Grav';
+import Grav from './appsl/ApiCountries/gravity/Grav';
 import Country from "./appsl/ApiCountries/componets/Country"
 //import Grav from './apps/grav/Grav';
 
