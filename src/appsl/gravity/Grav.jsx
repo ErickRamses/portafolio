@@ -617,7 +617,7 @@ canvaRef.current.onselectstart = function () { return false; }
 
 function painta(){
     context.fillStyle ="black"
-    context.fillRect(0,0,canvaRef.current.width,canvaRef.current.height)
+    context.fillRect(0,0,document.body.scrollWidth,window.innerHeight)
       
      if(!scrolled){
 

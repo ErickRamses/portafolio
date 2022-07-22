@@ -18,7 +18,7 @@ const Canvas = () => {
   window.addEventListener('resize',()=>{
     canvasRef.current.height=window.innerHeight*1.1;
     canvasRef.current.width=document.body.scrollWidth;
-    ctx.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height);    
+    ctx.clearRect(0, 0,document.body.scrollWidth, window.innerHeight*1.1);    
 })
 
 
@@ -50,7 +50,7 @@ const Canvas = () => {
    // ctx.arc(x, y, 2, 0, 2 * Math.PI);
     ctx.fillStyle = 'yellow';
     //ctx.fill()
-    ctx.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height);    
+    ctx.clearRect(0, 0, document.body.scrollWidth, window.innerHeight*1.1);    
     
     for(let i=0;i<planets.length;i++){
         planets[i].minipaint()
@@ -135,7 +135,7 @@ const Canvas = () => {
         return Math.sqrt((this.vx**2)+(this.vy**2))  
     }
     collision(){
-        if(this.x2>canvasRef.current.width+1000||this.x2<-10||this.y2<-10||this.y2>canvasRef.current.height+10){
+        if(this.x2>document.body.scrollWidth+1000||this.x2<-10||this.y2<-10||this.y2>window.innerHeight+10){
             this.alive=false
             //console.log("nuv")
         }
