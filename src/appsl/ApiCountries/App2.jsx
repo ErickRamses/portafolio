@@ -107,7 +107,7 @@ function App() {
     <div className="App2" style={{background:"hsl(207, 26%, 17%)",color:"white"}}>
          
         <Navbar searh={searh} filtrareg={filtrareg}/>
-        Where in the world
+      <h4 style={{marginBottom:"10px"}}>Where in the world</h4>  
         {  <Body data={data} cliked={cliked}/> }
           
           {
