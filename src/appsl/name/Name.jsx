@@ -97,7 +97,7 @@ useState(()=>{
         <input id="gi" type="text" ref={yoRef} />
       </div>
       <div>
-        <button className="button" onClick={getting}>
+        <button className="button2" onClick={getting}>
           search
         </button>
       </div>
