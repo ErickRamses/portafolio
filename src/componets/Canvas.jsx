@@ -13,6 +13,15 @@ const Canvas = () => {
     canvasRef.current.width=document.body.scrollWidth;
     
     let time =setInterval(space,1000/60)
+    window.addEventListener("scroll",()=>{
+        for(let i=0;i<planets.length;i++){
+            planets[i].alive=false 
+         }
+        let timea =setTimeout(()=>{
+           // ctx.clearRect(0, 0, document.body.scrollWidth, window.innerHeight*1.1);    
+           clearInterval(time)
+        },100)
+        })
     // do something here with the canvas
   }, [])
   window.addEventListener('resize',()=>{
@@ -135,7 +144,7 @@ const Canvas = () => {
         return Math.sqrt((this.vx**2)+(this.vy**2))  
     }
     collision(){
-        if(this.x2>document.body.scrollWidth+1000||this.x2<-10||this.y2<-10||this.y2>window.innerHeight+10){
+        if(this.x2>document.body.scrollWidth+1000||this.x2<-10||this.y2<-10||this.y2>window.innerHeight+100){
             this.alive=false
             //console.log("nuv")
         }
@@ -279,16 +288,16 @@ class sun{
     }
     
 }
-suns[0]=new sun(0,300,-1000,0,1,0)
+suns[0]=new sun(0,300,-500,0,1,0)
 
 if(document.body.scrollWidth>1000){
-    for(let i=0;i<75;i++){
-        planets.push(new planet(i,Math.floor(Math.random() * (document.body.scrollWidth - 0) + 0),i*(window.innerHeight/75),0,0))    
+    for(let i=0;i<150;i++){
+        planets.push(new planet(i,Math.floor(Math.random() * (document.body.scrollWidth - 0) + 0),i*(window.innerHeight/150),0,0))    
 
 }
 }else{
-    for(let i=0;i<30;i++){
-        planets.push(new planet(i,Math.floor(Math.random() * (document.body.scrollWidth - 0) + 0),i*(window.innerHeight/30),0,0))    
+    for(let i=0;i<60;i++){
+        planets.push(new planet(i,Math.floor(Math.random() * (document.body.scrollWidth - 0) + 0),i*(window.innerHeight/60),0,0))    
     
 }}
 
