@@ -736,7 +736,7 @@ function painta(){
     height="10px"
     style={{ margin: 0, marginBottom: "-4px", padding: 0 }}
   />
-  <div id="info">
+  <div id="info" style={{color:"black"}}>
     <div id="che">
       <label htmlFor="trajectory">trajectory</label>
       <label className="switch">

@@ -11,7 +11,7 @@ import reactrouterl from "./imagen/twitterimage.jpg"
 import bootstrap from "./imagen/bootstrap-icon.png"
 import sass from "./imagen/sass-icon.png"
 import git from "./imagen/git-icon.png"
-import code from "./imagen/pexels-pixabay-270366 (2).jpg"
+import code from "./imagen/pexels-pixabay-270366 (2) (2).jpg"
 import Canvas from './componets/Canvas';
 import Nav from './componets/Nav';
 //import Projects from './componets/Projects';
@@ -56,7 +56,7 @@ function App() {
           Hello i'm Erick Ramses a self taught web developer looking for an opportunity to show my potential
           ,i love solving problems and if it is difficult, the better :) I'm learning new things every day and  im expanding my skill set by learning Nodejs & Mongodb
           </div>
-         
+         <img style={{width:"90%",maxWidth:"800px"}} src={code}></img>
         </div>
       <div className='arrow-up2'></div>
         

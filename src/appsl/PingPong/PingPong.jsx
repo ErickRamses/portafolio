@@ -11,7 +11,7 @@ const AitBtn = document.querySelector("#AiBtn");
 
 
 const gameWidth = gameBoard.width;
-console.log(gameWidth)
+//console.log(gameWidth)
 
 const gameHeight = gameBoard.height;
 const boardBackground = "forestgreen";
