@@ -94,11 +94,13 @@ function App() {
           <div style={{gap:"10px" }} className='d-flex flex-wrap justify-content-center'>
             import app then link for all then then description then video
             
-            <div style={{background:"gray"}}><img className='video' src={html5}></img><div style={{textAlign:"center"}}><Link target="_blank" to="/Grav">About</Link>asas video istead not refind an here description</div></div>
+            <div style={{background:"gray"}}><img className='video' src={html5}></img><div style={{textAlign:"center"}}><Link  to="/Grav">About</Link>asas video istead not refind an here description</div></div>
 
 
 
-            <div style={{background:"gray"}}><img className='video' src={html5}></img><div style={{textAlign:"center"}}><Link target="_blank" to="/ApiCountries">About</Link>video istead not refind an here description</div></div>
+            <div style={{background:"gray"}}><img className='video' src={html5}></img><div style={{textAlign:"center"}}><Link  to="/ApiCountries">About</Link>video istead not refind an here description</div></div>
+
+            <div style={{background:"gray"}}><img className='video' src={html5}></img><div style={{textAlign:"center"}}><Link  to="/Name">About</Link>video istead not refind an here description</div></div>
 
 
             <div style={{background:"gray"}}><img className='video' src={html5}></img><div style={{textAlign:"center"}}>video istead not refind an here description</div></div>

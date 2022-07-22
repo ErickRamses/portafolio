@@ -45,7 +45,7 @@ const Country = () => {
        
        
             <div style={{paddingRight:"auto",paddingLeft:"10px",paddingTop:"10px"}}>
-                <button className='button' onClick={()=>{navigate(`/`);}}>back</button>
+                <button className='button' onClick={()=>{navigate(`/ApiCountries`);}}>back</button>
             </div>
             <br></br>
        {aray  &&   

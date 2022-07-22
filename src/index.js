@@ -9,25 +9,29 @@ import {
     BrowserRouter,
     Routes,
     Route,
+    HashRouter,
   } from "react-router-dom";
 import Grav from './appsl/gravity/Grav';
 import Country from "./appsl/ApiCountries/componets/Country"
+import Name from './appsl/name/Name';
 //import Grav from './apps/grav/Grav';
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <BrowserRouter>
+    <HashRouter>
     <Routes>
+      
+      <Route path="/" element={<App/>}> </Route>
       <Route path="/portafolio" element={<App />}> </Route>
-      <Route path="/" element={<App2/>}> </Route>
       <Route path="/Grav" element={<Grav/>}> </Route>
       <Route path="/ApiCountries" element={<App2/>}> </Route>
       <Route path="/country/:name" element={<Country/>} />
-
+      <Route path="/Name" element={<Name/>}> </Route>
+      
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
   
 );
 
