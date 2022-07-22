@@ -14,7 +14,7 @@ export const Navbar = ({searh,filtrareg}) => {
   return (
   
   <div style={{borderBottom:"1px solid Black",position:"sticky",top:"0px",background:"hsl(209, 23%, 22%)",marginBottom:"10px",zIndex:"1"}}>
-      
+       
       <div style={{padding:"10px",position:"sticky",top:"0px",background:"hsl(209, 23%, 22%)",display:"flex",alignItems:"baseline",maxWidth:"1248px",textAlign:"center",marginLeft:"auto",marginRight:"auto"}}>
 
         

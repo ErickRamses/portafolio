@@ -183,7 +183,7 @@ function checkCollision(){
     }
     if(ballX <= 0){
         player2Score+=1;
-        fastAi +=5
+        fastAi +=3
         updateScore();
         createBall();
         return;

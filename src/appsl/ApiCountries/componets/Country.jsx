@@ -46,6 +46,9 @@ const Country = () => {
        
             <div style={{paddingRight:"auto",paddingLeft:"10px",paddingTop:"10px"}}>
                 <button className='button' onClick={()=>{navigate(`/ApiCountries`);}}>back</button>
+             
+                 
+
             </div>
             <br></br>
        {aray  &&   
@@ -94,14 +97,16 @@ const Country = () => {
         <br/>
         Capital: <span style={{color:"rgb(194, 194, 194)"}}>{aray[0].capital}</span>
         <br></br>
+        {console.log()}        
         Currency: <span style={{color:"rgb(194, 194, 194)"}}>{eval(`aray[0].currencies.${Object.keys(aray[0].currencies)[0]}.symbol`) } {eval(`aray[0].currencies.${Object.keys(aray[0].currencies)[0]}.name`) }</span>
         <br></br>
         Languajes: <span style={{color:"rgb(194, 194, 194)"}}>{eval(`aray[0].languages.${Object.keys(aray[0].languages)[0]}`)} {eval(`aray[0].languages.${Object.keys(aray[0].languages)[1]}`)} {eval(`aray[0].languages.${Object.keys(aray[0].languages)[2]}`)} {eval(`aray[0].languages.${Object.keys(aray[0].languages)[3]}`)} {eval(`aray[0].languages.${Object.keys(aray[0].languages)[4]}`)}</span>
         <br></br>
+        <a  href={aray[0]?.maps?.googleMaps}>Map</a>
+        <br/>
         Coat of arms: <div style={{}}>
         <img src= {aray[0].coatOfArms?.svg} alt="" width="120px" />
             </div>
-                
         Bordering Countries: {aray[0].borders?.map((value)=>{
             return <button key={value} className='button' style={{marginLeft:"3px",marginTop:"3px"}} onClick={()=>{navigate(`/country/${value}`) 
             window.location.reload();

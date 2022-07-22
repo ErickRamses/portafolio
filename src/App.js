@@ -92,9 +92,9 @@ function App() {
              Some of my projects:
           <br></br>
           <div style={{gap:"10px" }} className='d-flex flex-wrap justify-content-center'>
-            import app then link for all then then description then video
+            import app then link for all then componet then description then video
             
-            <div style={{background:"gray"}}><img className='video' src={html5}></img><div style={{textAlign:"center"}}><Link  to="/Grav">1er project</Link>asas video istead not refind an here description</div></div>
+            <div style={{background:"gray"}}><img className='video' src={html5}></img><div style={{textAlign:"center"}}><Link  to="/Grav">1er project</Link>asas video istead not refind an here description aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div></div>
 
 
 
