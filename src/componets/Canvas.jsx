@@ -14,29 +14,26 @@ const Canvas = () => {
     
     let time =setInterval(space,1000/60)
     
+    // do something here with the canvas
     window.addEventListener("scroll",()=>{
-        if(window.scrollY >= 200){
+        if(window.scrollY >= 210){
              for(let i=0;i<planets.length;i++){
                  planets[i].alive=false 
               }
-            let timea =setTimeout(()=>{
-               // ctx.clearRect(0, 0, document.body.scrollWidth, window.innerHeight*1.1);    
-              
-    
+               space() 
                clearInterval(time)
                time=false 
-            },100)
+            
         }else{
             if(!time) {
+                time =setInterval(space,1000/60)
                 for(let i=0;i<planets.length;i++){
                     planets[i].alive=true
                  }
                 
-                time =setInterval(space,1000/60)
         }}
         })
-    // do something here with the canvas
-  }, [])
+}, [])
   window.addEventListener('resize',()=>{
     canvasRef.current.height=window.innerHeight*1.1;
     canvasRef.current.width=document.body.scrollWidth;
