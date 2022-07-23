@@ -15,12 +15,12 @@ import code from "./imagen/pexels-pixabay-270366 (2) (2).jpg"
 import Canvas from './componets/Canvas';
 import Nav from './componets/Nav';
 //import Projects from './componets/Projects';
-
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
   
 function App() {
-  
+  let navigate = useNavigate();
 
 
   return (
@@ -31,7 +31,7 @@ function App() {
       
       <div className="App">
         <div style={{padding:"20px",zIndex:"1000"}}>
-          <div className='Header'>Hi, my name is better know if your up to alive everthing and run canvas</div>
+          <div className='Header'>Hi, my name is </div>
           <div className='Header1'>Erick Ramses</div>
           <div className='Header3'>passionate problem solver &</div>
           <div className='Header2'>Web developer</div>
@@ -89,15 +89,31 @@ function App() {
         <br></br>
         <br></br>
         <br></br>
-             Some of my projects:
-          <br></br>
+        <span style={{fontSize:"1.95em"}}>
+        Some of my <u>projects</u>:<br></br>
+          </span>
+                     <br></br>
           <div style={{gap:"10px" }} className='d-flex flex-wrap justify-content-center'>
-            import app then link for all then componet then description then video
+           
+            <div style={{background:"black",maxWidth:"500px"}}><img className='video' src={html5}></img><div style={{textAlign:"center"}}><div style={{fontSize:"1.1em",maxWidth:"1000px"}}>
+          <span style={{fontSize:"1.1em"}}>
+          Gravity simulator  <br></br>
+          </span>
+          with features like mass,time warp and more, i buid this to get better at javascript i used classes for suns and planets and an array for trajetories it is a complex proyect that got me studing trigonometry it was hard and fun to build 
+          
+            </div>
+            <div style={{textAlign:"left",paddingLeft:"10px"}}>
+            <Link target="_blank" to="/Grav"> <Button variant="outline-primary"> See live</Button></Link>
+
+            <a style={{textDecoration:"none"}} target="_blank" href="https://github.com/ErickRamses/grav"> <Button style={{marginLeft:"5px"}} variant="outline-primary"> code</Button></a>
+              
+              
             
-            <div style={{background:"gray"}}><img className='video' src={html5}></img><div style={{textAlign:"center"}}><Link target="_blank" to="/Grav">1er project</Link>asas video istead not refind an here description aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div></div>
+            </div>
+            <br></br>
+</div></div>
 
-
-
+            
             <div style={{background:"gray"}}><img className='video' src={html5}></img><div style={{textAlign:"center"}}><Link  target="_blank"  to="/ApiCountries">2do</Link>video istead not refind an here description</div></div>
 
             <div style={{background:"gray"}}><img className='video' src={html5}></img><div style={{textAlign:"center"}}><Link  target="_blank" to="/Name">3ro</Link>video istead not refind an here description</div></div>
