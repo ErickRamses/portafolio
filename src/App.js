@@ -17,8 +17,15 @@ import Nav from './componets/Nav';
 //import Projects from './componets/Projects';
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import grav from "./imagen/gravity.png"
+import grav2 from "./imagen/gravity2.png"
+import grav3 from "./imagen/gravity3.png"
 
-  
+import Projects from './componets/Projects';
+import ApiCountries from "./imagen/count1.png"
+import ApiCountries2 from "./imagen/count2.png"  
+import ApiCountries3 from "./imagen/count3.png"  
+
 function App() {
   let navigate = useNavigate();
 
@@ -94,24 +101,9 @@ function App() {
           </span>
                      <br></br>
           <div style={{gap:"10px" }} className='d-flex flex-wrap justify-content-center'>
-           
-            <div style={{background:"black",maxWidth:"500px"}}><img className='video' src={html5}></img><div style={{textAlign:"center"}}><div style={{fontSize:"1.1em",maxWidth:"1000px"}}>
-          <span style={{fontSize:"1.1em"}}>
-          Gravity simulator  <br></br>
-          </span>
-          with features like mass,time warp and more, i buid this to get better at javascript i used classes for suns and planets and an array for trajetories it is a complex proyect that got me studing trigonometry it was hard and fun to build 
-          
-            </div>
-            <div style={{textAlign:"left",paddingLeft:"10px"}}>
-            <Link target="_blank" to="/Grav"> <Button variant="outline-primary"> See live</Button></Link>
+           <Projects video={grav} video2={grav2} video3={grav3} title={"Gravity simulator"} info={" with features like mass,time warp and more, i buid this to get better at javascript i used classes for suns and planets and an array for trajetories it is a complex proyect that got me studing trigonometry it was hard and fun to build "} live={"/Grav"} code={"https://github.com/ErickRamses/grav"}></Projects>
 
-            <a style={{textDecoration:"none"}} target="_blank" href="https://github.com/ErickRamses/grav"> <Button style={{marginLeft:"5px"}} variant="outline-primary"> code</Button></a>
-              
-              
-            
-            </div>
-            <br></br>
-</div></div>
+           <Projects video={ApiCountries} video2={ApiCountries2} video3={ApiCountries3} title={""} info={" with features like mass,time warp and more, i buid this to get better at javascript i used classes for suns and planets and an array for trajetories it is a complex proyect that got me studing trigonometry it was hard and fun to build "} live={"/ApiCountries"} code={"https://github.com/ErickRamses/rest-countries-api-with-color-theme-switcher-master"}></Projects>  
 
             
             <div style={{background:"gray"}}><img className='video' src={html5}></img><div style={{textAlign:"center"}}><Link  target="_blank"  to="/ApiCountries">2do</Link>video istead not refind an here description</div></div>

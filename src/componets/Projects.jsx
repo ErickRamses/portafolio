@@ -1,8 +1,54 @@
 import React from 'react'
+import { Link } from "react-router-dom";
+import { Button } from 'react-bootstrap';
+import Carousel from 'react-bootstrap/Carousel';
 
-const Projects = ({video,title,info,live,code}) => {
+
+const Projects = ({video,video2,video3,title,info,live,code}) => {
   return (
-    <div>Projects</div>
+    <div style={{maxWidth:"700px",background:"#1d2c46",padding:"5px",borderRadius:"10px"}}><Carousel>
+    <Carousel.Item interval={100000}>
+      <img
+        className="d-block w-100"
+        src={video}
+        alt="First slide"
+      />
+      
+    </Carousel.Item>
+    <Carousel.Item interval={100000}>
+      <img
+        className="d-block w-100"
+        src={video2}
+        alt="Second slide"
+      />
+      
+    </Carousel.Item >
+    <Carousel.Item interval={100000}>
+      <img
+        className="d-block w-100"
+        src={video3}
+        alt="Third slide"
+      />
+      
+    </Carousel.Item>
+  </Carousel> <div style={{textAlign:"center"}}><div style={{fontSize:"1.1em",maxWidth:"1000px"}}>
+    <span style={{fontSize:"1.1em"}}>
+    {title}  <br></br>
+    </span>
+    {info}
+      </div>
+      
+      <div style={{textAlign:"left",paddingLeft:"10px",marginTop:"6px"}}>
+      <Link target="_blank" to={live}> <Button variant="outline-primary"> See live</Button></Link>
+
+      <a style={{textDecoration:"none"}} target="_blank" href={code}> <Button style={{marginLeft:"5px"}} variant="outline-primary"> code</Button></a>
+        
+       
+      
+      </div>
+      <br></br>
+      
+</div></div>
   )
 }
 
