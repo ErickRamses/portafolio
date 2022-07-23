@@ -13,21 +13,34 @@ const Canvas = () => {
     canvasRef.current.width=document.body.scrollWidth;
     
     let time =setInterval(space,1000/60)
+    
     window.addEventListener("scroll",()=>{
-        for(let i=0;i<planets.length;i++){
-            planets[i].alive=false 
-         }
-        let timea =setTimeout(()=>{
-           // ctx.clearRect(0, 0, document.body.scrollWidth, window.innerHeight*1.1);    
-           clearInterval(time)
-        },100)
+        if(window.scrollY >= 200){
+             for(let i=0;i<planets.length;i++){
+                 planets[i].alive=false 
+              }
+            let timea =setTimeout(()=>{
+               // ctx.clearRect(0, 0, document.body.scrollWidth, window.innerHeight*1.1);    
+              
+    
+               clearInterval(time)
+               time=false 
+            },100)
+        }else{
+            if(!time) {
+                for(let i=0;i<planets.length;i++){
+                    planets[i].alive=true
+                 }
+                
+                time =setInterval(space,1000/60)
+        }}
         })
     // do something here with the canvas
   }, [])
   window.addEventListener('resize',()=>{
     canvasRef.current.height=window.innerHeight*1.1;
     canvasRef.current.width=document.body.scrollWidth;
-    ctx.clearRect(0, 0,document.body.scrollWidth, window.innerHeight*1.1);    
+   // ctx.clearRect(0, 0,document.body.scrollWidth, window.innerHeight*1.1);    
 })
 
 
@@ -288,7 +301,7 @@ class sun{
     }
     
 }
-suns[0]=new sun(0,300,-500,0,1,0)
+suns[0]=new sun(0,150,-250,0,1,0)
 
 if(document.body.scrollWidth>1000){
     for(let i=0;i<150;i++){
