@@ -6,8 +6,9 @@ import Carousel from 'react-bootstrap/Carousel';
 
 const Projects = ({video,video2,video3,title,info,live,code}) => {
   return (
-    <div style={{maxWidth:"700px",background:"#1d2c46",padding:"5px",borderRadius:"10px"}}><Carousel>
-    <Carousel.Item interval={100000}>
+    <div style={{maxWidth:"700px",background:"hsl(220, 50%, 20%)",padding:"5px",borderRadius:"10px"}}>
+      <Carousel style={{height:"320px"}}>
+    <Carousel.Item interval={100000000}>
       <img
         className="d-block w-100"
         src={video}
@@ -15,7 +16,7 @@ const Projects = ({video,video2,video3,title,info,live,code}) => {
       />
       
     </Carousel.Item>
-    <Carousel.Item interval={100000}>
+    <Carousel.Item interval={100000000}>
       <img
         className="d-block w-100"
         src={video2}
@@ -23,7 +24,7 @@ const Projects = ({video,video2,video3,title,info,live,code}) => {
       />
       
     </Carousel.Item >
-    <Carousel.Item interval={100000}>
+    <Carousel.Item interval={100000000}>
       <img
         className="d-block w-100"
         src={video3}
@@ -31,17 +32,17 @@ const Projects = ({video,video2,video3,title,info,live,code}) => {
       />
       
     </Carousel.Item>
-  </Carousel> <div style={{textAlign:"center"}}><div style={{fontSize:"1.1em",maxWidth:"1000px"}}>
+  </Carousel> <div style={{textAlign:"center",marginTop:"7px"}}><div style={{fontSize:"1.1em",maxWidth:"1000px",height:"125px"}}>
     <span style={{fontSize:"1.1em"}}>
     {title}  <br></br>
     </span>
     {info}
       </div>
       
-      <div style={{textAlign:"left",paddingLeft:"10px",marginTop:"6px"}}>
-      <Link target="_blank" to={live}> <Button variant="outline-primary"> See live</Button></Link>
+      <div style={{textAlign:"left",paddingLeft:"10px"}}>
+      <Link target="_blank" to={live}> <Button variant="primary"> See live</Button></Link>
 
-      <a style={{textDecoration:"none"}} target="_blank" href={code}> <Button style={{marginLeft:"5px"}} variant="outline-primary"> code</Button></a>
+      <a style={{textDecoration:"none"}} target="_blank" href={code}> <Button style={{marginLeft:"5px"}} variant="primary"> code</Button></a>
         
        
       

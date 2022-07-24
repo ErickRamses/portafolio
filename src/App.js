@@ -26,6 +26,13 @@ import ApiCountries from "./imagen/count1.png"
 import ApiCountries2 from "./imagen/count2.png"  
 import ApiCountries3 from "./imagen/count3.png"  
 
+import name1 from "./imagen/Name1.png"
+import name2 from "./imagen/name2p.png"
+import name3 from "./imagen/name 3.png"
+
+import p1 from "./imagen/p1.png"
+import p2 from "./imagen/p2.png"
+import p3 from "./imagen/p3.png"
 function App() {
   let navigate = useNavigate();
 
@@ -103,18 +110,15 @@ function App() {
           <div style={{gap:"10px" }} className='d-flex flex-wrap justify-content-center'>
            <Projects video={grav} video2={grav2} video3={grav3} title={"Gravity simulator"} info={" with features like mass,time warp and more, i buid this to get better at javascript i used classes for suns and planets and an array for trajetories it is a complex proyect that got me studing trigonometry it was hard and fun to build "} live={"/Grav"} code={"https://github.com/ErickRamses/grav"}></Projects>
 
-           <Projects video={ApiCountries} video2={ApiCountries2} video3={ApiCountries3} title={""} info={" with features like mass,time warp and more, i buid this to get better at javascript i used classes for suns and planets and an array for trajetories it is a complex proyect that got me studing trigonometry it was hard and fun to build "} live={"/ApiCountries"} code={"https://github.com/ErickRamses/rest-countries-api-with-color-theme-switcher-master"}></Projects>  
+           <Projects video={ApiCountries} video2={ApiCountries2} video3={ApiCountries3} title={"Countries Api"} info={" i build this website with react and react router it fetches from an api and displays the information in an organise way you can search by name and filter by region also  you can click on a country to see more detailed information on a separate page"} live={"/ApiCountries"} code={"https://github.com/ErickRamses/rest-countries-api-with-color-theme-switcher-master"}></Projects>  
 
-            
-            <div style={{background:"gray"}}><img className='video' src={html5}></img><div style={{textAlign:"center"}}><Link  target="_blank"  to="/ApiCountries">2do</Link>video istead not refind an here description</div></div>
+           <Projects video={name1} video2={name2} video3={name3} title={"Name Api"} info={" i build this website with html css javascript and sass as you can see you can write a name and get a probability of where is from also you can toggle dark mode"} live={"/Name"} code={"https://github.com/ErickRamses/name"}></Projects>  
 
-            <div style={{background:"gray"}}><img className='video' src={html5}></img><div style={{textAlign:"center"}}><Link  target="_blank" to="/Name">3ro</Link>video istead not refind an here description</div></div>
+           <Projects video={p1} video2={p2} video3={p3} title={"PingPong"} info={"a game of pingpong with an AI with dinamic dificulty made with html css javascript you can also play 2 players mode"} live={"/PingPong"} code={"https://github.com/ErickRamses/pingpong"}></Projects> 
 
-            <div style={{background:"gray"}}><img className='video' src={html5}></img><div style={{textAlign:"center"}}><Link  target="_blank" to="/PingPong">4ro</Link>video istead not refind an here description</div></div>
-
-            <div style={{background:"gray"}}><img className='video' src={html5}></img><div style={{textAlign:"center"}}>video istead not refind an here description</div></div>
-            
           </div>
+            <br></br>
+            <br></br>
           
         </div>
         </div>
