@@ -26,7 +26,7 @@ const Canvas = () => {
             
         }else{
             if(!time) {
-                time =setInterval(space,1000/60)
+                time =setInterval(space,1000/24)
                 for(let i=0;i<planets.length;i++){
                     planets[i].alive=true
                  }
