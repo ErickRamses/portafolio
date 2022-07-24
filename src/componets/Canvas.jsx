@@ -12,7 +12,7 @@ const Canvas = () => {
     canvasRef.current.height=window.innerHeight*1.1;
     canvasRef.current.width=document.body.scrollWidth;
     
-    let time =setInterval(space,1000/60)
+    let time =setInterval(space,1000/24)
     
     // do something here with the canvas
     window.addEventListener("scroll",()=>{
@@ -161,7 +161,7 @@ const Canvas = () => {
     }
     minipaint(){
         ctx.beginPath();
-        ctx.arc(this.x2, this.y2, 5, 0, 2 * Math.PI);
+        ctx.arc(this.x2, this.y2, 7, 0, 2 * Math.PI);
         ctx.fillStyle = "yelow";
 
         if(this.alive){
@@ -298,16 +298,16 @@ class sun{
     }
     
 }
-suns[0]=new sun(0,150,-250,0,1,0)
+suns[0]=new sun(0,350,-250,0,1,0)
 
 if(document.body.scrollWidth>1000){
-    for(let i=0;i<150;i++){
-        planets.push(new planet(i,Math.floor(Math.random() * (document.body.scrollWidth - 0) + 0),i*(window.innerHeight/150),0,0))    
+    for(let i=0;i<100;i++){
+        planets.push(new planet(i,Math.floor(Math.random() * (document.body.scrollWidth - 0) + 0),i*(window.innerHeight/100),0,0))    
 
 }
 }else{
-    for(let i=0;i<60;i++){
-        planets.push(new planet(i,Math.floor(Math.random() * (document.body.scrollWidth - 0) + 0),i*(window.innerHeight/60),0,0))    
+    for(let i=0;i<40;i++){
+        planets.push(new planet(i,Math.floor(Math.random() * (document.body.scrollWidth - 0) + 0),i*(window.innerHeight/40),0,0))    
     
 }}
 
