@@ -12,7 +12,7 @@ const Canvas = () => {
     canvasRef.current.height=window.innerHeight*1.1;
     canvasRef.current.width=document.body.scrollWidth;
     
-    let time =setInterval(space,1000/30)
+    let time =setInterval(space,1000/60)
     
     // do something here with the canvas
     window.addEventListener("scroll",()=>{
@@ -26,7 +26,7 @@ const Canvas = () => {
             
         }else{
             if(!time) {
-                time =setInterval(space,1000/30)
+                time =setInterval(space,1000/60)
                 for(let i=0;i<planets.length;i++){
                     planets[i].alive=true
                  }
@@ -73,6 +73,11 @@ const Canvas = () => {
     
     for(let i=0;i<planets.length;i++){
         planets[i].minipaint()
+     //   planets[i].begin()   
+        //suns[0].minipaint()    
+    }
+    for(let i=0;i<planets.length;i++){
+      //  planets[i].minipaint()
         planets[i].begin()   
         //suns[0].minipaint()    
     }
@@ -94,7 +99,7 @@ const Canvas = () => {
     begin(){
         //orden might be important
         if(this.alive){
-        this.minipaint()
+        //this.minipaint()
         this.collision()
         // if(!pausado){
          this.movement()
@@ -298,7 +303,7 @@ class sun{
     }
     
 }
-suns[0]=new sun(0,350,-250,0,1,0)
+suns[0]=new sun(0,200,-250,0,1,0)
 
 if(document.body.scrollWidth>1000){
     for(let i=0;i<75;i++){

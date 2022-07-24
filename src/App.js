@@ -99,10 +99,7 @@ function App() {
       <div className='arrow-up3'></div>
 
         <div className='Myprojects'>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
+        <div style={{height:"9vh"}}></div>
         <span style={{fontSize:"1.95em"}}>
         Some of my <u>projects</u>:<br></br>
           </span>
