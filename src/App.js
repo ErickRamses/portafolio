@@ -51,7 +51,7 @@ function App() {
           <div className='Header2'>Web developer</div>
         </div>
        
-        <div  className='Back' ></div>
+         <div  className='Back' ></div> 
 
 
       </div>

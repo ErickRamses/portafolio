@@ -4,6 +4,7 @@ import { useEffect,useRef } from 'react';
 
 let x;
 let y;
+let alive;
 const Canvas = () => {
     const canvasRef = useRef(null)
   let ctx;
@@ -13,24 +14,33 @@ const Canvas = () => {
     canvasRef.current.width=document.body.scrollWidth;
     
     let time =setInterval(space,1000/60)
+     alive=true
     
     // do something here with the canvas
     window.addEventListener("scroll",()=>{
-        if(window.scrollY >= 210){
-             for(let i=0;i<planets.length;i++){
-                 planets[i].alive=false 
-              }
-               space() 
-               clearInterval(time)
-               time=false 
-            
+        
+        
+        if(window.scrollY >= 210 ){
+            if(alive){
+            alive=false
+
+               for(let i=0;i<planets.length;i++){
+                   planets[i].alive=false 
+                }
+                 space() 
+                 clearInterval(time)
+                 time=false 
+                 alive=false
+               
+            }
         }else{
             if(!time) {
+                
                 time =setInterval(space,1000/60)
+                alive=true
                 for(let i=0;i<planets.length;i++){
                     planets[i].alive=true
                  }
-                
         }}
         })
 }, [])
