@@ -64,22 +64,7 @@
   width: 100%;
   position: absolute;
   z-index: -1;
-  background: linear-gradient(0.25turn, #0a192f, #233554, #233554, #0a192f, #0a192f);
-  background-size: 200vw;
-  -webkit-animation-name: backg;
-          animation-name: backg;
-  -webkit-animation-duration: 20s;
-          animation-duration: 20s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
+  background: linear-gradient(0.25turn, #0a192f, #233554);
 }
 
 .arrow-up {
