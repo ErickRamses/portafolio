@@ -67,7 +67,7 @@ function App() {
           <span style={{fontSize:"1.3em"}}>
           <u>About</u> me:<br></br>
           </span>
-          Hello, I'm Erick Ramses, a self-taught web developer looking for an opportunity to show my potential , i love solving problems and if it is difficult, the better :) I'm learning new things every day and im expanding my skill set by learning Nodejs & Mongodb
+          Hello, I'm Erick Ramses, a self-taught web developer looking for an opportunity to show my potential , i love solving problems and if it is difficult, the better :) i normally do it for hours that's why i like strategy games I'm learning new things every day and im expanding my skill set by learning Nodejs & Mongodb
           </div>
          <img style={{width:"90%",maxWidth:"800px"}} loading={"lazy"} src={code}></img>
         </div>
