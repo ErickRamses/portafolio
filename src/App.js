@@ -103,6 +103,7 @@ function App() {
         Some of my <u>projects</u>:<br></br>
           </span>
                      <br></br>
+          <a style={{textDecoration:"none"}} target="_blank" href={"https://github.com/ErickRamses/portafolio"}> <Button style={{marginBottom:"7px"}} variant="primary"> code of this website</Button></a>
           <div style={{gap:"10px" }} className='d-flex flex-wrap justify-content-center'>
            <Projects video={grav} video2={grav2} video3={grav3} title={"Gravity simulator"} info={" with features like mass, time warp and more, i build this to get better at javascript i used classes for suns and planets and an array for trajectories it is a complex project that got me studying trigonometry it was hard and fun to build"} live={"/Grav"} code={"https://github.com/ErickRamses/grav"}></Projects>
 
@@ -112,6 +113,8 @@ function App() {
 
            <Projects video={p1} video2={p2} video3={p3} title={"PingPong"} info={"a game of pingpong with an AI with dynamic difficulty made with html css javascript you can also play 2 players mode"} live={"/PingPong"} code={"https://github.com/ErickRamses/pingpong"}></Projects> 
           
+           
+
           </div>
           <br></br>
         
