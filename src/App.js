@@ -67,8 +67,7 @@ function App() {
           <span style={{fontSize:"1.3em"}}>
           <u>About</u> me:<br></br>
           </span>
-          Hello i'm Erick Ramses a self taught web developer looking for an opportunity to show my potential
-          ,i love solving problems and if it is difficult, the better :) I'm learning new things every day and  im expanding my skill set by learning Nodejs & Mongodb
+          Hello, I'm Erick Ramses, a self-taught web developer looking for an opportunity to show my potential , i love solving problems and if it is difficult, the better :) I'm learning new things every day and im expanding my skill set by learning Nodejs & Mongodb
           </div>
          <img style={{width:"90%",maxWidth:"800px"}} loading={"lazy"} src={code}></img>
         </div>
@@ -105,19 +104,24 @@ function App() {
           </span>
                      <br></br>
           <div style={{gap:"10px" }} className='d-flex flex-wrap justify-content-center'>
-           <Projects video={grav} video2={grav2} video3={grav3} title={"Gravity simulator"} info={" with features like mass,time warp and more, i buid this to get better at javascript i used classes for suns and planets and an array for trajetories it is a complex proyect that got me studing trigonometry it was hard and fun to build "} live={"/Grav"} code={"https://github.com/ErickRamses/grav"}></Projects>
+           <Projects video={grav} video2={grav2} video3={grav3} title={"Gravity simulator"} info={" with features like mass, time warp and more, i build this to get better at javascript i used classes for suns and planets and an array for trajectories it is a complex project that got me studying trigonometry it was hard and fun to build"} live={"/Grav"} code={"https://github.com/ErickRamses/grav"}></Projects>
 
-           <Projects video={ApiCountries} video2={ApiCountries2} video3={ApiCountries3} title={"Countries Api"} info={" i build this website with react and react router it fetches from an api and displays the information in an organise way you can search by name and filter by region also  you can click on a country to see more detailed information on a separate page"} live={"/ApiCountries"} code={"https://github.com/ErickRamses/rest-countries-api-with-color-theme-switcher-master"}></Projects>  
+           <Projects video={ApiCountries} video2={ApiCountries2} video3={ApiCountries3} title={"Countries Api"} info={"i build this website with react and react router it fetches from an api and displays the information in an organized way you can search by name and filter by region also you can click on a country to see more detailed information on a separate page"} live={"/ApiCountries"} code={"https://github.com/ErickRamses/rest-countries-api-with-color-theme-switcher-master"}></Projects>  
 
            <Projects video={name1} video2={name2} video3={name3} title={"Name Api"} info={" i build this website with html css javascript and sass as you can see you can write a name and get a probability of where is from also you can toggle dark mode"} live={"/Name"} code={"https://github.com/ErickRamses/name"}></Projects>  
 
-           <Projects video={p1} video2={p2} video3={p3} title={"PingPong"} info={"a game of pingpong with an AI with dinamic dificulty made with html css javascript you can also play 2 players mode"} live={"/PingPong"} code={"https://github.com/ErickRamses/pingpong"}></Projects> 
-
-          </div>
-            <br></br>
-            <br></br>
+           <Projects video={p1} video2={p2} video3={p3} title={"PingPong"} info={"a game of pingpong with an AI with dynamic difficulty made with html css javascript you can also play 2 players mode"} live={"/PingPong"} code={"https://github.com/ErickRamses/pingpong"}></Projects> 
           
+          </div>
+          <br></br>
+        
+
+<a style={{textDecoration:"none"}} target="_blank" href={"https://www.linkedin.com/in/gonzalez-torres-erick-ramses-30aa11241/"}> <Button style={{marginLeft:"5px",width:"150px",height:"50px"}} variant="dark">Linkedin</Button></a>
+<a style={{textDecoration:"none",}} target="_blank" href={"https://github.com/ErickRamses"}> <Button style={{marginLeft:"5px",width:"150px",height:"50px"}} variant="dark">Github</Button></a>
+  
+      <div className='arrow-up4'></div>
         </div>
+        
         </div>
       </div>
     

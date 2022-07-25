@@ -113,6 +113,17 @@
           clip-path: polygon(100% 0%, 0% 0%, 100% 100%);
 }
 
+.arrow-up4 {
+  position: relative;
+  z-index: 10;
+  top: 10vh;
+  width: 100%;
+  height: 10vh;
+  background: hsl(219deg, 40%, 43%);
+  -webkit-clip-path: polygon(100% 0%, 0% 0%, 100% 100%);
+          clip-path: polygon(100% 0%, 0% 0%, 100% 100%);
+}
+
 /* .blur{
 
   width: 100%;
