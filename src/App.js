@@ -119,7 +119,7 @@ function App() {
           <br></br>
         
 
-<a style={{textDecoration:"none"}} target="_blank" href={"https://www.linkedin.com/in/gonzalez-torres-erick-ramses-30aa11241/"}> <Button style={{marginLeft:"5px",width:"150px",height:"50px"}} variant="dark">Linkedin</Button></a>
+<a style={{textDecoration:"none"}} target="_blank" href={"https://www.linkedin.com/in/erick-ramses-gonzalez-torres-16bb9b246/"}> <Button style={{marginLeft:"5px",width:"150px",height:"50px"}} variant="dark">Linkedin</Button></a>
 <a style={{textDecoration:"none",}} target="_blank" href={"https://github.com/ErickRamses"}> <Button style={{marginLeft:"5px",width:"150px",height:"50px"}} variant="dark">Github</Button></a>
   
       <div className='arrow-up4'></div>
