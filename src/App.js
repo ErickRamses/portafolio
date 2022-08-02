@@ -50,8 +50,10 @@ function App() {
           <div className='Header3'>passionate problem solver &</div>
           <div className='Header2'>Web developer</div>
         </div>
-       
-          <div  className='Back' ></div>  
+          <div className='cont'>
+            <div  className='Back' ></div>  
+
+          </div>
 
 
       </div>
