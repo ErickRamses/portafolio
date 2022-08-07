@@ -33,6 +33,10 @@ import name3 from "./imagen/name 3.png"
 import p1 from "./imagen/p1.png"
 import p2 from "./imagen/p2.png"
 import p3 from "./imagen/p3.png"
+
+import sp1 from "./imagen/sp1.png"
+import sp2 from "./imagen/sp2.png"
+import sp3 from "./imagen/sp3.png"
 function App() {
   let navigate = useNavigate();
 
@@ -111,11 +115,13 @@ function App() {
           <div style={{gap:"10px" }} className='d-flex flex-wrap justify-content-center'>
            <Projects video={grav} video2={grav2} video3={grav3} title={"Gravity simulator"} info={" with features like mass, time warp and more, i build this to get better at javascript i used classes for suns and planets and an array for trajectories it is a complex project that got me studying trigonometry it was hard and fun to build"} live={"/Grav"} code={"https://github.com/ErickRamses/grav"}></Projects>
 
-           <Projects video={ApiCountries} video2={ApiCountries2} video3={ApiCountries3} title={"Countries Api"} info={"i build this website with react and react router it fetches from an api and displays the information in an organized way you can search by name and filter by region also you can click on a country to see more detailed information on a separate page"} live={"/ApiCountries"} code={"https://github.com/ErickRamses/rest-countries-api-with-color-theme-switcher-master"}></Projects>  
+           <Projects video={ApiCountries} video2={ApiCountries2} video3={ApiCountries3} title={"Countries Api"} info={"i build this website with react and react router it fetches from an api and displays the information in an organized way you can search by name and filter by region also you can click on a country to see more detailed information on a separate page i used local storage and useEfect to load faster for filter i used 2 useState "} live={"/ApiCountries"} code={"https://github.com/ErickRamses/rest-countries-api-with-color-theme-switcher-master"}></Projects>  
 
-           <Projects video={name1} video2={name2} video3={name3} title={"Name Api"} info={" i build this website with html css javascript and sass as you can see you can write a name and get a probability of where is from also you can toggle dark mode"} live={"/Name"} code={"https://github.com/ErickRamses/name"}></Projects>  
+           <Projects video={sp1} video2={sp2} video3={sp3} title={"Space tourism"} info={"a website to get information about space torism,i build this because i thought it was an interesting topic , this time i used scroll() to navigate"} live={"/Name"} code={"https://github.com/ErickRamses/name"}></Projects>  
 
-           <Projects video={p1} video2={p2} video3={p3} title={"PingPong"} info={"a game of pingpong with an AI with dynamic difficulty made with html css javascript you can also play 2 players mode,this is the only project where i followed a tutorial at first and then added a lot of features on my own"} live={"/PingPong"} code={"https://github.com/ErickRamses/pingpong"}></Projects> 
+           <Projects video={name1} video2={name2} video3={name3} title={"Name Api"} info={" i build this website with html css javascript and sass as you can see you can write a name and get a probability of where is from also you can toggle dark mode i did it by changing the values of css variables "} live={"/Name"} code={"https://github.com/ErickRamses/name"}></Projects>  
+
+           <Projects video={p1} video2={p2} video3={p3} title={"PingPong"} info={"a game of pingpong with an AI with dynamic difficulty made with html css javascript you can also play 2 players mode , to make dificulty dynamic , the reaction time of the AI is modified "} live={"/PingPong"} code={"https://github.com/ErickRamses/pingpong"}></Projects> 
           
            
 
