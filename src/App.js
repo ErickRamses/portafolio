@@ -115,7 +115,7 @@ function App() {
 
            <Projects video={name1} video2={name2} video3={name3} title={"Name Api"} info={" i build this website with html css javascript and sass as you can see you can write a name and get a probability of where is from also you can toggle dark mode"} live={"/Name"} code={"https://github.com/ErickRamses/name"}></Projects>  
 
-           <Projects video={p1} video2={p2} video3={p3} title={"PingPong"} info={"a game of pingpong with an AI with dynamic difficulty made with html css javascript you can also play 2 players mode"} live={"/PingPong"} code={"https://github.com/ErickRamses/pingpong"}></Projects> 
+           <Projects video={p1} video2={p2} video3={p3} title={"PingPong"} info={"a game of pingpong with an AI with dynamic difficulty made with html css javascript you can also play 2 players mode,this is the only project where i followed a tutorial at first and then added a lot of features on my own"} live={"/PingPong"} code={"https://github.com/ErickRamses/pingpong"}></Projects> 
           
            
 
