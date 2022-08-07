@@ -15,6 +15,8 @@ import Grav from './appsl/gravity/Grav';
 import Country from "./appsl/ApiCountries/componets/Country"
 import Name from './appsl/name/Name';
 import PingPong from './appsl/PingPong/PingPong';
+import Space from './appsl/space/App3';
+
 //import Grav from './apps/grav/Grav';
 
 
@@ -31,6 +33,7 @@ root.render(
       <Route path="/country/:name" element={<Country/>} />
       <Route path="/Name" element={<Name/>}> </Route>
       <Route path="/PingPong" element={<PingPong/>}> </Route>
+      <Route path="/space" element={<Space/>}> </Route>
       
     </Routes>
   </HashRouter>
