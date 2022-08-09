@@ -316,13 +316,13 @@ class sun{
 suns[0]=new sun(0,200,-550,500,1,0)
 
 if(document.body.scrollWidth>1000){
-    for(let i=0;i<200;i++){
-        planets.push(new planet(i,Math.floor(Math.random() * (document.body.scrollWidth - 0) + 0),i*(window.innerHeight/200),0,0))    
+    for(let i=0;i<180;i++){
+        planets.push(new planet(i,Math.floor(Math.random() * (document.body.scrollWidth - 0) + 0),i*(window.innerHeight/180),0,0))    
 
 }
 }else{
-    for(let i=0;i<80;i++){
-        planets.push(new planet(i,Math.floor(Math.random() * (document.body.scrollWidth - 0) + 0),i*(window.innerHeight/80),0,0))    
+    for(let i=0;i<50;i++){
+        planets.push(new planet(i,Math.floor(Math.random() * (document.body.scrollWidth - 0) + 0),i*(window.innerHeight/50),0,0))    
     
 }}
 

@@ -17,11 +17,13 @@ import Nav from './componets/Nav';
 //import Projects from './componets/Projects';
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+
+import Projects from './componets/Projects';
+
 import grav from "./imagen/gravity.png"
 import grav2 from "./imagen/gravity2.png"
 import grav3 from "./imagen/gravity3.png"
 
-import Projects from './componets/Projects';
 import ApiCountries from "./imagen/count1.png"
 import ApiCountries2 from "./imagen/count2.png"  
 import ApiCountries3 from "./imagen/count3.png"  
@@ -34,9 +36,9 @@ import p1 from "./imagen/p1.png"
 import p2 from "./imagen/p2.png"
 import p3 from "./imagen/p3.png"
 
-import sp1 from "./imagen/sp1.png"
-import sp2 from "./imagen/sp2.png"
-import sp3 from "./imagen/sp3.png"
+import sp1 from "./imagen/sp1_1.webp"
+import sp2 from "./imagen/sp2_1.webp"
+import sp3 from "./imagen/sp3_1.webp"
 function App() {
   let navigate = useNavigate();
 
