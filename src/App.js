@@ -70,7 +70,7 @@ function App() {
       <br></br>
        
         <div className='Aboutme'>
-          <div style={{maxWidth:"500px"}}>
+          <div style={{maxWidth:"700px"}}>
 
           <span style={{fontSize:"1.3em"}}>
           <u>About</u> me:<br></br>
@@ -111,7 +111,7 @@ function App() {
         Some of my <u>projects</u>:<br></br>
           </span>
                      <br></br>
-          <a style={{textDecoration:"none"}} target="_blank" href={"https://github.com/ErickRamses/portafolio"}> <Button style={{marginBottom:"7px"}} variant="dark"> code of this website</Button></a>
+          <a style={{textDecoration:"none"}} target="_blank" href={"https://github.com/ErickRamses/portafolio"}> <Button style={{marginBottom:"7px",fontSize:"1.6rem"}} variant="dark"> code of this website</Button></a>
           <br></br>
           <br></br>
           <div style={{gap:"10px" }} className='d-flex flex-wrap justify-content-center'>
@@ -119,7 +119,7 @@ function App() {
 
            <Projects video={ApiCountries} video2={ApiCountries2} video3={ApiCountries3} title={"Countries Api"} info={"i build this website with react and react router it fetches from an api and displays the information in an organized way you can search by name and filter by region also you can click on a country to see more detailed information on a separate page i used local storage and useEfect to load faster for filter i used 2 useState "} live={"/ApiCountries"} code={"https://github.com/ErickRamses/rest-countries-api-with-color-theme-switcher-master"}></Projects>  
 
-           <Projects video={sp1} video2={sp2} video3={sp3} title={"Space tourism"} info={"a landing website to get information about space torism,i build this because i thought it was an interesting topic and i wanted to challenge my self to do it as fast as posible , this time i used scroll() to navigate"} live={"/space"} code={"https://github.com/ErickRamses/space-tourism"}></Projects>  
+           <Projects video={sp1} video2={sp2} video3={sp3} title={"Space tourism"} info={"a landing website to get information about space tourism,i build this because i thought it was an interesting topic and i wanted to challenge my self to do it as fast as posible , this time i used scroll() to navigate"} live={"/space"} code={"https://github.com/ErickRamses/space-tourism"}></Projects>  
 
            <Projects video={name1} video2={name2} video3={name3} title={"Name Api"} info={" i build this website with html css javascript and sass as you can see you can write a name and get a probability of where is from also you can toggle dark mode i did it by changing the values of css variables "} live={"/Name"} code={"https://github.com/ErickRamses/name"}></Projects>  
 
