@@ -11,7 +11,7 @@ const Projects = ({video,video2,video3,title,info,live,code}) => {
     <Carousel.Item interval={100000000}>
     <div style={{marginBottom:"48%",height:"0"}}>
      
-      <img style={{marginBottom:"1%"}} 
+      <img loading='lazy' style={{marginBottom:"1%"}} 
         className="d-block w-100"
         src={video}
         alt="First slide"
