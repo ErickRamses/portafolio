@@ -54,6 +54,7 @@ function App() {
     window.scrollTo(0, 0)
 
     window.addEventListener("load",()=>{
+      if(loaded)return;
       window.onscroll ="" 
       window.scrollTo(0, 0)
       setTimeout(()=>{      loade.current.remove()
@@ -64,12 +65,22 @@ function App() {
         Header3.current.style.animationName = "example";
 
       },100)
-
       })
 
 
   },[])
-    
+  setTimeout(()=>{      
+    window.scrollTo(0, 0)
+    window.onscroll ="" 
+    loaded=true
+    setTimeout(()=>{
+    loade.current.remove()
+    Header.current.style.animationName = "example";
+    Header1.current.style.animationName = "example";
+    Header2.current.style.animationName = "example";
+    Header3.current.style.animationName = "example";
+    },100)
+  },2900)
   //;
 
   return (
