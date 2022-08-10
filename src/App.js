@@ -39,22 +39,55 @@ import p3 from "./imagen/p3.png"
 import sp1 from "./imagen/sp1_1.webp"
 import sp2 from "./imagen/sp2_1.webp"
 import sp3 from "./imagen/sp3_1.webp"
+import { useEffect, useRef } from 'react';
 function App() {
   let navigate = useNavigate();
+  let loade=useRef()
+  let Header=useRef()
+  let Header1=useRef()
+  let Header2=useRef()
+  let Header3=useRef()
 
+  let loaded=false;
+  useEffect(()=>{
+    window.onscroll = function () { window.scrollTo(0, 0); };
+    window.scrollTo(0, 0)
+
+    window.addEventListener("load",()=>{
+      window.onscroll ="" 
+      window.scrollTo(0, 0)
+      setTimeout(()=>{      loade.current.remove()
+        window.scrollTo(0, 0)
+        Header.current.style.animationName = "example";
+        Header1.current.style.animationName = "example";
+        Header2.current.style.animationName = "example";
+        Header3.current.style.animationName = "example";
+
+      },100)
+
+      })
+
+
+  },[])
+    
+  //;
 
   return (
     //title  skills canvas 🙏  navar 
     //lets add planets but first canvas in other componet lol
     //fix proyects then video and description
     <div >
-      
+
+       <div ref={loade} className="loader-wrapper">
+      <span className="loader"><span className="loader-inner"></span></span>
+    </div>
       <div className="App">
         <div style={{padding:"20px",zIndex:"1000"}}>
-          <div className='Header'>Hi, my name is </div>
-          <div className='Header1'>Erick Ramses</div>
-          <div className='Header3'>passionate problem solver &</div>
-          <div className='Header2'>Web developer</div>
+          
+          <div ref={Header} className='Header'>Hi, my name is </div>
+          <div ref={Header1} className='Header1'>Erick Ramses</div>
+          <div ref={Header3} className='Header3'>passionate problem solver &</div>
+          <div ref={Header2} className='Header2'>Web developer</div>
         </div>
           <div className='cont'>
             <div  className='Back' ></div>  

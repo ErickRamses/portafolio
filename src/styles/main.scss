@@ -90,12 +90,13 @@
     font-size: 1em;
     color: #64ffda;
     opacity: 0;
-    animation-name: example;
+    animation-name: l;
     animation-duration: .5s;
     animation-timing-function: linear;
     animation-delay: 1s;
     animation-iteration-count:1;
     animation-fill-mode: forwards;
+    
     
   }
   .Header1{
@@ -103,7 +104,7 @@
     
     font-size: 2em;
     opacity: 0;
-    animation-name: example;
+    animation-name: l;
     animation-duration: .5s;
     animation-timing-function: linear;
     animation-delay: 1.25s;
@@ -116,7 +117,7 @@
 
     font-size: 3.5em;
     opacity: 0;
-    animation-name: example;
+    animation-name: l;
     animation-duration: .5s;
     animation-timing-function: linear;
     animation-delay: 1.75s;
@@ -129,7 +130,7 @@
 
     font-size: 2em;
     opacity: 0;
-    animation-name: example;
+    animation-name: l;
     animation-duration: .5s;
     animation-timing-function: linear;
     animation-delay: 1.5s;
@@ -170,3 +171,47 @@
   
     }
   }
+  .loader-wrapper {
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #242f3f;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+  }
+  .loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #Fff;
+    animation: loader 2s infinite ease;
+  }
+  .loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 2s infinite ease-in;
+  }
+  
+  @keyframes loader {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(180deg);}
+    50% { transform: rotate(180deg);}
+    75% { transform: rotate(360deg);}
+    100% { transform: rotate(360deg);}
+  }
+  
+  @keyframes loader-inner {
+    0% { height: 0%;}
+    25% { height: 0%;}
+    50% { height: 100%;}
+    75% { height: 100%;}
+    100% { height: 0%;}
+  }
+
