@@ -64,7 +64,7 @@ function App() {
         Header2.current.style.animationName = "example";
         Header3.current.style.animationName = "example";
 
-      },100)
+      },150)
       })
 
 
@@ -79,8 +79,8 @@ function App() {
     Header1.current.style.animationName = "example";
     Header2.current.style.animationName = "example";
     Header3.current.style.animationName = "example";
-    },100)
-  },2900)
+    },155)
+  },1850)
   //;
 
   return (
