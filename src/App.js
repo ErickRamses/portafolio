@@ -55,6 +55,8 @@ function App() {
 
     window.addEventListener("load",()=>{
       if(loaded)return;
+    loaded=true
+
       window.onscroll ="" 
       window.scrollTo(0, 0)
       setTimeout(()=>{      loade.current.remove()
@@ -69,7 +71,8 @@ function App() {
 
 
   },[])
-  setTimeout(()=>{      
+  setTimeout(()=>{ 
+    if(loaded)return;     
     window.scrollTo(0, 0)
     window.onscroll ="" 
     loaded=true

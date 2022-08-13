@@ -176,7 +176,7 @@ const Canvas = () => {
     }
     minipaint(){
         ctx.beginPath();
-        ctx.arc(this.x2, this.y2, 6, 0, 2 * Math.PI);
+        ctx.arc(this.x2, this.y2, 7, 0, 2 * Math.PI);
         ctx.fillStyle = "yelow";
 
         if(this.alive){
@@ -316,8 +316,8 @@ class sun{
 suns[0]=new sun(0,200,-550,500,1,0)
 
 if(document.body.scrollWidth>1000){
-    for(let i=0;i<180;i++){
-        planets.push(new planet(i,Math.floor(Math.random() * (document.body.scrollWidth - 0) + 0),i*(window.innerHeight/180),0,0))    
+    for(let i=0;i<150;i++){
+        planets.push(new planet(i,Math.floor(Math.random() * (document.body.scrollWidth - 0) + 0),i*(window.innerHeight/150),0,0))    
 
 }
 }else{

@@ -9,6 +9,10 @@
 }
 #gameBoard{
     border: 3px solid;
+    width: 100%;
+    max-width: 600px;
+    
+
 }
 #scoreText{
     font-family: "consolas", monospace;

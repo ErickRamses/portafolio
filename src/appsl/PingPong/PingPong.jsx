@@ -344,7 +344,7 @@ function resetGame(){
   return (
     <div>
         <div id="gameContainer">
-  <canvas id="gameBoard" width={500} height={500} />
+  <canvas id="gameBoard" width={600} height={600} />
   <div id="scoreText">0 : 0</div>
   <button id="resetBtn">Reset</button>
   <button id="pauseBtn">Pause</button>
