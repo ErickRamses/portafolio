@@ -12,7 +12,8 @@ import bootstrap from "./imagen/bootstrap-icon.png"
 import sass from "./imagen/sass-icon.png"
 import git from "./imagen/git-icon.png"
 import ts from "./imagen/ts.png"
-
+import node from "./imagen/node.png"
+import ex from "./imagen/ex.png"
 
 import code from "./imagen/pexels-pixabay-270366 (2) (2).jpg"
 import Canvas from './componets/Canvas';
@@ -147,6 +148,11 @@ function App() {
             <div><img className='imagen' src={html5}></img><div style={{textAlign:"center"}}>html5</div></div>
             <div><img className='imagen' src={css3}></img><div style={{textAlign:"center"}}>Css3</div></div>
             <div><img className='imagenround' src={javas}></img><div style={{textAlign:"center"}}>Javascript</div></div>
+           
+            <div><div style={{width:"90px",height:"90px",display:"flex",justifyContent:"center",alignItems:"center"}}><img style={{width:"84px"}} className='imagen' src={node}></img></div><div style={{textAlign:"center"}}>Node</div></div>
+            <div><div style={{width:"90px",height:"90px",display:"flex",justifyContent:"center",alignItems:"center"}}><img style={{width:"84px",borderRadius:"10px"}} className='imagen' src={ex}></img></div><div style={{textAlign:"center"}}>Express</div></div>
+
+
             <div><div style={{width:"90px",height:"90px",display:"flex",justifyContent:"center",alignItems:"center"}}><img style={{width:"84px"}} className='imagen' src={ts}></img></div><div style={{textAlign:"center"}}>Typescript</div></div>
             <div><img className='imagenround' src={reactl}></img><div style={{textAlign:"center"}}>React</div></div>
             <div><img className='imagenround' src={reactrouterl}></img><div style={{textAlign:"center"}}>React Router</div></div>
