@@ -4,7 +4,7 @@ import { Button } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
 
 
-const Projects = ({video,video2,video3,title,info,live,code}) => {
+const Projects = ({video,video2,video3,title,info,live,code,two}) => {
   return (
     <div style={{maxWidth:"700px",background:"hsl(220, 50%, 20%)",padding:"5px",borderRadius:"10px"}}>
       <Carousel>
@@ -43,15 +43,36 @@ const Projects = ({video,video2,video3,title,info,live,code}) => {
     </span>
     {info}
       </div>
+
+      
+      {two==true ? <>
+      
+      
+        <div style={{textAlign:"left",paddingLeft:"10px",marginTop:"auto"}}>
+        <a style={{textDecoration:"none"}} target="_blank" href={live}> <Button variant="primary"> See live</Button></a>
+
+      <a style={{textDecoration:"none"}} target="_blank" href={code}> <Button style={{marginLeft:"5px"}} variant="primary"> code</Button></a>
+     
+      
+     
+      
+      </div>
+      
+      </> : <>
+      
       
       <div style={{textAlign:"left",paddingLeft:"10px",marginTop:"auto"}}>
       <Link target="_blank" to={live}> <Button variant="primary"> See live</Button></Link>
 
       <a style={{textDecoration:"none"}} target="_blank" href={code}> <Button style={{marginLeft:"5px"}} variant="primary"> code</Button></a>
-        
-       
+    
+      
+     
       
       </div>
+      
+      </>}
+      
       <br></br>
       
 </div></div>

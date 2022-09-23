@@ -14,6 +14,7 @@ import git from "./imagen/git-icon.png"
 import ts from "./imagen/ts.png"
 import node from "./imagen/node.png"
 import ex from "./imagen/ex.png"
+import mon from "./imagen/mon.png"
 
 import code from "./imagen/pexels-pixabay-270366 (2) (2).jpg"
 import Canvas from './componets/Canvas';
@@ -24,6 +25,10 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 import Projects from './componets/Projects';
+import sing from "./imagen/sing.png"
+import sing2 from "./imagen/sing2.png"
+import sing3 from "./imagen/sing3.png"
+
 
 import grav from "./imagen/gravity.png"
 import grav2 from "./imagen/gravity2.png"
@@ -147,17 +152,18 @@ function App() {
           <div style={{gap:"10px"}} className='d-flex flex-wrap justify-content-center'>
             <div><img className='imagen' src={html5}></img><div style={{textAlign:"center"}}>html5</div></div>
             <div><img className='imagen' src={css3}></img><div style={{textAlign:"center"}}>Css3</div></div>
-            <div><img className='imagenround' src={javas}></img><div style={{textAlign:"center"}}>Javascript</div></div>
-           
-            <div><div style={{width:"90px",height:"90px",display:"flex",justifyContent:"center",alignItems:"center"}}><img style={{width:"84px"}} className='imagen' src={node}></img></div><div style={{textAlign:"center"}}>Node</div></div>
-            <div><div style={{width:"90px",height:"90px",display:"flex",justifyContent:"center",alignItems:"center"}}><img style={{width:"84px",borderRadius:"10px"}} className='imagen' src={ex}></img></div><div style={{textAlign:"center"}}>Express</div></div>
-
-
-            <div><div style={{width:"90px",height:"90px",display:"flex",justifyContent:"center",alignItems:"center"}}><img style={{width:"84px"}} className='imagen' src={ts}></img></div><div style={{textAlign:"center"}}>Typescript</div></div>
-            <div><img className='imagenround' src={reactl}></img><div style={{textAlign:"center"}}>React</div></div>
-            <div><img className='imagenround' src={reactrouterl}></img><div style={{textAlign:"center"}}>React Router</div></div>
             <div><img className='imagen' src={bootstrap}></img><div style={{textAlign:"center"}}>Bootstrap</div></div>
             <div><img className='imagen' src={sass}></img><div style={{textAlign:"center"}}>Sass</div></div>
+            <div><img className='imagenround' src={javas}></img><div style={{textAlign:"center"}}>Javascript</div></div>
+           
+            <div><div style={{width:"90px",height:"90px",display:"flex",justifyContent:"center",alignItems:"center"}}><img style={{width:"84px"}} className='imagen' src={ts}></img></div><div style={{textAlign:"center"}}>Typescript</div></div>
+            <div><div style={{width:"90px",height:"90px",display:"flex",justifyContent:"center",alignItems:"center"}}><img style={{width:"84px",borderRadius:"10px"}} className='imagen' src={mon}></img></div><div style={{textAlign:"center"}}>Mongodb</div></div>
+            <div><div style={{width:"90px",height:"90px",display:"flex",justifyContent:"center",alignItems:"center"}}><img style={{width:"84px",borderRadius:"10px"}} className='imagen' src={ex}></img></div><div style={{textAlign:"center"}}>Express</div></div>
+            <div><img className='imagenround' src={reactl}></img><div style={{textAlign:"center"}}>React</div></div>
+            <div><div style={{width:"90px",height:"90px",display:"flex",justifyContent:"center",alignItems:"center"}}><img style={{width:"84px"}} className='imagen' src={node}></img></div><div style={{textAlign:"center"}}>Node</div></div>
+
+
+            {/* <div><img className='imagenround' src={reactrouterl}></img><div style={{textAlign:"center"}}>React Router</div></div> */}
             <div><img className='imagen' src={git}></img><div style={{textAlign:"center"}}>Git</div></div>               
           </div>
         </div>
@@ -175,11 +181,13 @@ function App() {
           <div style={{gap:"10px" }} className='d-flex flex-wrap justify-content-center'>
            <Projects video={grav} video2={grav2} video3={grav3} title={"Gravity simulator"} info={" with features like mass, time warp and more, i build this to get better at javascript i used classes for suns and planets and an array for trajectories it is a complex project that got me studying trigonometry it was hard and fun to build and debug"} live={"/Grav"} code={"https://github.com/ErickRamses/grav"}></Projects>
 
+           <Projects video={sing} video2={sing2} video3={sing3} title={"MERN Budgets"} info={"a fullstack aplication where you can make budgets and save it if you login , made with the mern stack"} live={"https://beamish-paletas-1906d1.netlify.app/"} code={"https://github.com/ErickRamses/client"}  two={true}></Projects>
+
            <Projects video={ApiCountries} video2={ApiCountries2} video3={ApiCountries3} title={"Countries Api"} info={"i build this website with react and react router it fetches from an api and displays the information in an organized way you can search by name and filter by region also you can click on a country to see more detailed information on a separate page i used local storage and useEfect to load faster for filter i used 2 useState "} live={"/ApiCountries"} code={"https://github.com/ErickRamses/rest-countries-api-with-color-theme-switcher-master"}></Projects>  
 
            <Projects video={sp1} video2={sp2} video3={sp3} title={"Space tourism"} info={"a landing website to get information about space tourism,i build this because i thought it was an interesting topic and i wanted to challenge my self to do it as fast as posible , this time i used scroll() to navigate"} live={"/space"} code={"https://github.com/ErickRamses/space-tourism"}></Projects>  
 
-           <Projects video={name1} video2={name2} video3={name3} title={"Name Api"} info={" i build this website with html css javascript and sass as you can see you can write a name and get a probability of where is from also you can toggle dark mode i did it by changing the values of css variables "} live={"/Name"} code={"https://github.com/ErickRamses/name"}></Projects>  
+           <Projects video={name1} video2={name2} video3={name3} title={"Name Api"} info={" i build this website with html css javascript and sass as you can see you can write a name and get a probability of where is from i get this information from a public API also you can toggle dark mode i did it by changing the values of css variables "} live={"/Name"} code={"https://github.com/ErickRamses/name"}></Projects>  
 
            <Projects video={p1} video2={p2} video3={p3} title={"PingPong"} info={"a game of pingpong with an AI with dynamic difficulty made with html css javascript you can also play 2 players mode , to make dificulty dynamic , the reaction time of the AI is modified "} live={"/PingPong"} code={"https://github.com/ErickRamses/pingpong"}></Projects> 
           
