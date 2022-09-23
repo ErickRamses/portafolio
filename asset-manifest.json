@@ -1,11 +1,14 @@
 {
   "files": {
     "main.css": "/portafolio/static/css/main.64f3cbda.css",
-    "main.js": "/portafolio/static/js/main.1ebcce32.js",
+    "main.js": "/portafolio/static/js/main.4adc3af6.js",
     "static/js/787.ae0d8d37.chunk.js": "/portafolio/static/js/787.ae0d8d37.chunk.js",
+    "static/media/sing.png": "/portafolio/static/media/sing.f6f9d2adc0eeb4038d49.png",
     "static/media/pexels-pixabay-270366 (2) (2).jpg": "/portafolio/static/media/pexels-pixabay-270366 (2) (2).2b425641622ccb8ae42e.jpg",
     "static/media/count1.png": "/portafolio/static/media/count1.c75b5acea9019ca91262.png",
+    "static/media/sing3.png": "/portafolio/static/media/sing3.f8ce94ae9ec5e0c723d4.png",
     "static/media/count2.png": "/portafolio/static/media/count2.ae3eb72917bb9c04fa23.png",
+    "static/media/sing2.png": "/portafolio/static/media/sing2.95597b507e2340eff438.png",
     "static/media/sp3_1.webp": "/portafolio/static/media/sp3_1.23ca27a7394dc5864081.webp",
     "static/media/count3.png": "/portafolio/static/media/count3.d0ee04bb932e4189744e.png",
     "static/media/sp2_1.webp": "/portafolio/static/media/sp2_1.4fda2fc284dfc975d987.webp",
@@ -33,17 +36,18 @@
     "static/media/p1.png": "/portafolio/static/media/p1.de29b42d1d6481b783a5.png",
     "static/media/p2.png": "/portafolio/static/media/p2.37bebc305d7933e74b35.png",
     "static/media/p3.png": "/portafolio/static/media/p3.5cf7407b9cacdd3c26a1.png",
+    "static/media/mon.png": "/portafolio/static/media/mon.bdb34bde5d0713fe117f.png",
     "static/media/sass-icon.png": "/portafolio/static/media/sass-icon.9381a3b70e09b2259046.png",
     "static/media/html5.png": "/portafolio/static/media/html5.6e4a5621783c3c8c0667.png",
     "static/media/css3.png": "/portafolio/static/media/css3.68ba79f50e3278164cb8.png",
     "static/media/ex.png": "/portafolio/static/media/ex.2968eed95ca829693dc7.png",
     "index.html": "/portafolio/index.html",
     "main.64f3cbda.css.map": "/portafolio/static/css/main.64f3cbda.css.map",
-    "main.1ebcce32.js.map": "/portafolio/static/js/main.1ebcce32.js.map",
+    "main.4adc3af6.js.map": "/portafolio/static/js/main.4adc3af6.js.map",
     "787.ae0d8d37.chunk.js.map": "/portafolio/static/js/787.ae0d8d37.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.64f3cbda.css",
-    "static/js/main.1ebcce32.js"
+    "static/js/main.4adc3af6.js"
   ]
 }
