@@ -18,7 +18,10 @@ const Country = () => {
      if(name.length==3){
         fetch(`https://restcountries.com/v3.1/alpha/${name}`)
      .then(res=>res.json())
-     .then(data =>{   
+     .then(data =>{
+        if(data.length==3){
+            data=data[1]
+        }   
         setaray(data)
               
         
@@ -27,6 +30,9 @@ const Country = () => {
         fetch(`https://restcountries.com/v3.1/name/${name}`)
      .then(res=>res.json())
      .then(data =>{   
+        if(data.length==3){
+            data=data[1]
+        }
         setaray(data)
               
         
