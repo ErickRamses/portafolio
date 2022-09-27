@@ -19,10 +19,13 @@ const Country = () => {
         fetch(`https://restcountries.com/v3.1/alpha/${name}`)
      .then(res=>res.json())
      .then(data =>{
-        if(data.length==3){
-            data=data[1]
+        if(data.length>1){
+            let found=data.find(e => e.name.common==name)
+            if(found==undefined){found=data}
+            setaray([found])
+        }else{
+            setaray(data)
         }   
-        setaray(data)
               
         
     })
@@ -30,11 +33,13 @@ const Country = () => {
         fetch(`https://restcountries.com/v3.1/name/${name}`)
      .then(res=>res.json())
      .then(data =>{   
-        if(data.length==3){
-            data=data[1]
-        }
-        setaray(data)
-              
+        if(data.length>1){
+            let found=data.find(e => e.name.common==name)
+            if(found==undefined){found=data}
+            setaray([found])
+        }else{
+            setaray(data)
+        }         
         
     })
 
