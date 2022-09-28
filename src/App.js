@@ -148,6 +148,11 @@ function App() {
               My current <u>skills</u>:<br></br>
           </span>
             I am proficient in these technologies. I can solve most problems. If I'm stuck in a situation, I can research the solution, and if I don't find it, it's a nice challenge to solve. 
+              {/* <ul style={{textAlign:"left"}}>
+                <li>s</li>
+                <li>d</li>
+                <li>a</li>
+              </ul> */}
             </div>
             
             <br></br>
@@ -172,12 +177,13 @@ function App() {
           </div >
           <br></br>
 
-          <div style={{width:"100vw",  display: "flex",
-    flexWrap: "wrap",
-    justifyContent: "center",
-    alignItems: "center"
+          <div style={{width:"100vw", 
+    //        display: "flex",
+    // flexWrap: "wrap",
+    // justifyContent: "center",
+    // alignItems: "center"
    }}>
-          <div style={{fontSize:"1.5em",maxWidth:"1000px",width:"100vw"}}>
+          <div style={{fontSize:"1.5em",width:"100%",textAlign:"center",}}>
           <span style={{fontSize:"1.3em"}}>
           </span>
           other technologies
