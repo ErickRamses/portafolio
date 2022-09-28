@@ -15,6 +15,10 @@ import ts from "./imagen/ts.png"
 import node from "./imagen/node.png"
 import ex from "./imagen/ex.png"
 import mon from "./imagen/mon.png"
+import axi from "./imagen/axios.png"
+import red from "./imagen/redux.png"
+import mog from "./imagen/mog.png"
+
 
 import code from "./imagen/pexels-pixabay-270366 (2) (2).jpg"
 import Canvas from './componets/Canvas';
@@ -110,7 +114,7 @@ function App() {
           
           <div ref={Header} className='Header'>Hi, my name is </div>
           <div ref={Header1} className='Header1'>Erick Ramses</div>
-          <div ref={Header3} className='Header3'>passionate problem solver &</div>
+          <div ref={Header3} className='Header3'>Diligent problem solver &</div>
           <div ref={Header2} className='Header2'>Web developer</div>
         </div>
           <div className='cont'>
@@ -132,9 +136,9 @@ function App() {
           <span style={{fontSize:"1.3em"}}>
           <u>About</u> me:<br></br>
           </span>
-          Hello, I'm Erick Ramses, a self-taught web developer looking for an opportunity to show my potential , i love solving problems and if it is difficult, the better :) i normally do it for hours that's why i like strategy games I'm learning new things every day and im expanding my skill set by learning Nodejs & Mongodb
+          Hello, I'm Erick Ramses, a self-taught web developer looking for an opportunity to show my potential , i love solving problems and if it is difficult, the better :) i normally do it for hours that's why i like strategy games I'm learning new things every day and im expanding my skill set by learning backend
           </div>
-         <img style={{width:"90%",maxWidth:"800px"}} loading={"lazy"} src={code}></img>
+         <img style={{width:"90%",maxWidth:"800px",borderRadius:"5px"}} loading={"lazy"} src={code}></img>
         </div>
       <div className='arrow-up2'></div>
         
@@ -150,23 +154,46 @@ function App() {
             <br></br>
 
           <div style={{gap:"10px"}} className='d-flex flex-wrap justify-content-center'>
-            <div><img className='imagen' src={html5}></img><div style={{textAlign:"center"}}>html5</div></div>
-            <div><img className='imagen' src={css3}></img><div style={{textAlign:"center"}}>Css3</div></div>
-            <div><img className='imagen' src={bootstrap}></img><div style={{textAlign:"center"}}>Bootstrap</div></div>
-            <div><img className='imagen' src={sass}></img><div style={{textAlign:"center"}}>Sass</div></div>
-            <div><img className='imagenround' src={javas}></img><div style={{textAlign:"center"}}>Javascript</div></div>
-           
-            <div><div style={{width:"90px",height:"90px",display:"flex",justifyContent:"center",alignItems:"center"}}><img style={{width:"84px"}} className='imagen' src={ts}></img></div><div style={{textAlign:"center"}}>Typescript</div></div>
+            {/* <div><img className='imagen' src={html5}></img><div style={{textAlign:"center"}}>html5</div></div>
+            <div><img className='imagen' src={css3}></img><div style={{textAlign:"center"}}>Css3</div></div> */}
             <div><div style={{width:"90px",height:"90px",display:"flex",justifyContent:"center",alignItems:"center"}}><img style={{width:"84px",borderRadius:"10px"}} className='imagen' src={mon}></img></div><div style={{textAlign:"center"}}>Mongodb</div></div>
             <div><div style={{width:"90px",height:"90px",display:"flex",justifyContent:"center",alignItems:"center"}}><img style={{width:"84px",borderRadius:"10px"}} className='imagen' src={ex}></img></div><div style={{textAlign:"center"}}>Express</div></div>
             <div><img className='imagenround' src={reactl}></img><div style={{textAlign:"center"}}>React</div></div>
             <div><div style={{width:"90px",height:"90px",display:"flex",justifyContent:"center",alignItems:"center"}}><img style={{width:"84px"}} className='imagen' src={node}></img></div><div style={{textAlign:"center"}}>Node</div></div>
+            <div><img className='imagen' src={bootstrap}></img><div style={{textAlign:"center"}}>Bootstrap</div></div>
+            <div><img className='imagen' src={sass}></img><div style={{textAlign:"center"}}>Sass</div></div>
+            {/* <div><img className='imagenround' src={javas}></img><div style={{textAlign:"center"}}>Javascript</div></div>
+            */}
+            <div><div style={{width:"90px",height:"90px",display:"flex",justifyContent:"center",alignItems:"center"}}><img style={{width:"84px"}} className='imagen' src={ts}></img></div><div style={{textAlign:"center"}}>Typescript</div></div>
 
 
             {/* <div><img className='imagenround' src={reactrouterl}></img><div style={{textAlign:"center"}}>React Router</div></div> */}
-            <div><img className='imagen' src={git}></img><div style={{textAlign:"center"}}>Git</div></div>               
-          </div>
-        </div>
+            <div><img className='imagen' src={git}></img><div style={{textAlign:"center"}}>Git</div></div>     
+          </div >
+          <br></br>
+
+          <div style={{width:"100vw",  display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    alignItems: "center"
+   }}>
+          <div style={{fontSize:"1.5em",maxWidth:"1000px",width:"100vw"}}>
+          <span style={{fontSize:"1.3em"}}>
+          </span>
+          other technologies
+            </div>
+          <br></br>
+            
+            <div style={{gap:"10px"}} className='d-flex flex-wrap justify-content-center'>
+            
+
+             <div><img className='imagenround' src={reactrouterl}></img><div style={{textAlign:"center"}}>React Router</div></div> 
+            <div><img className='imagen imagenround' src={axi}></img><div style={{textAlign:"center"}}>Axios</div></div>     
+            <div><img className='imagen' src={red}></img><div style={{textAlign:"center"}}>Redux</div></div>     
+            <div><img className='imagen' src={mog}></img><div style={{textAlign:"center"}}>Mongoose</div></div>     
+             
+          </div>          
+        </div></div>
       <div className='arrow-up3'></div>
 
         <div className='Myprojects'>
@@ -181,7 +208,7 @@ function App() {
           <div style={{gap:"10px" }} className='d-flex flex-wrap justify-content-center'>
            <Projects video={grav} video2={grav2} video3={grav3} title={"Gravity simulator"} info={" with features like mass, time warp and more, i build this to get better at javascript i used classes for suns and planets and an array for trajectories it is a complex project that got me studying trigonometry it was hard and fun to build and debug"} live={"/Grav"} code={"https://github.com/ErickRamses/grav"}></Projects>
 
-           <Projects video={sing} video2={sing2} video3={sing3} title={"MERN Budgets"} info={"a fullstack aplication where you can make budgets and save it if you login , made with the mern stack"} live={"https://beamish-paletas-1906d1.netlify.app/"} code={"https://github.com/ErickRamses/client"}  two={true}></Projects>
+           <Projects video={sing} video2={sing2} video3={sing3} title={"MERN Budgets"} info={"a fullstack aplication where you can make budgets and save it if you login , made with the mern stack ,the server is a rest Api that uses authentication to receive and update information ,backend is hosted in heroku"} live={"https://beamish-paletas-1906d1.netlify.app/"} code={"https://github.com/ErickRamses/client"}  two={true}></Projects>
 
            <Projects video={ApiCountries} video2={ApiCountries2} video3={ApiCountries3} title={"Countries Api"} info={"i build this website with react and react router it fetches from an api and displays the information in an organized way you can search by name and filter by region also you can click on a country to see more detailed information on a separate page i used local storage and useEfect to load faster for filter i used 2 useState "} live={"/ApiCountries"} code={"https://github.com/ErickRamses/rest-countries-api-with-color-theme-switcher-master"}></Projects>  
 
