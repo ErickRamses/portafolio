@@ -143,16 +143,21 @@ function App() {
       <div className='arrow-up2'></div>
         
         <div className='Skills'>
-            <div style={{fontSize:"1.5em",maxWidth:"1000px"}}>
+            <div style={{fontSize:"1.5rem",maxWidth:"1000px"}}>
           <span style={{fontSize:"1.3em"}}>
               My current <u>skills</u>:<br></br>
           </span>
-            I am proficient in these technologies. I can solve most problems. If I'm stuck in a situation, I can research the solution, and if I don't find it, it's a nice challenge to solve. 
-              {/* <ul style={{textAlign:"left"}}>
-                <li>s</li>
-                <li>d</li>
-                <li>a</li>
-              </ul> */}
+            <span style={{fontSize:".8em"}}>
+            {/* I am proficient in these technologies. I can solve most problems. If I'm stuck in a situation, I can research the solution, and if I don't find it, it's a nice challenge to solve.    */}
+            <ul style={{textAlign:"left"}}>
+              <li><b>Responsive: </b>understanding of UI/UX best practices and responsive design</li>
+              {/* <li>excellent debugging skills with dev tools and coding best practices</li> */}
+              <li><b>Fast: </b>performance such as optimizing images and minifying CSS and JavaScript</li>
+              <li><b>Dynamic: </b>websites can be much more interesting , i love making pages come to life.</li>
+
+            </ul>
+
+            </span>       
             </div>
             
             <br></br>
@@ -167,8 +172,8 @@ function App() {
             <div><div style={{width:"90px",height:"90px",display:"flex",justifyContent:"center",alignItems:"center"}}><img style={{width:"84px"}} className='imagen' src={node}></img></div><div style={{textAlign:"center"}}>Node</div></div>
             <div><img className='imagen' src={bootstrap}></img><div style={{textAlign:"center"}}>Bootstrap</div></div>
             <div><img className='imagen' src={sass}></img><div style={{textAlign:"center"}}>Sass</div></div>
-            {/* <div><img className='imagenround' src={javas}></img><div style={{textAlign:"center"}}>Javascript</div></div>
-            */}
+            <div><img className='imagenround' src={javas}></img><div style={{textAlign:"center"}}>JavaScript (ES6+)</div></div>
+           
             <div><div style={{width:"90px",height:"90px",display:"flex",justifyContent:"center",alignItems:"center"}}><img style={{width:"84px"}} className='imagen' src={ts}></img></div><div style={{textAlign:"center"}}>Typescript</div></div>
 
 
@@ -182,7 +187,7 @@ function App() {
     // flexWrap: "wrap",
     // justifyContent: "center",
     // alignItems: "center"
-   }}>
+  }}>
           <div style={{fontSize:"1.5em",width:"100%",textAlign:"center",}}>
           <span style={{fontSize:"1.3em"}}>
           </span>
