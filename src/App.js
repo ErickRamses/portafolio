@@ -18,6 +18,8 @@ import mon from "./imagen/mon.png"
 import axi from "./imagen/axios.png"
 import red from "./imagen/redux.png"
 import mog from "./imagen/mog.png"
+import next from "./imagen/nextjs.png"
+import graph from "./imagen/GraphQL.png"
 
 
 import code from "./imagen/pexels-pixabay-270366 (2) (2).jpg"
@@ -138,17 +140,18 @@ function App() {
           </span>
           Hello, I'm Erick Ramses, a self-taught web developer looking for an opportunity to show my potential , i love solving problems and if it is difficult, the better :) i normally do it for hours that's why i like strategy games I'm learning new things every day and im expanding my skill set by learning backend
           </div>
-         <img style={{width:"90%",maxWidth:"800px",borderRadius:"5px"}} loading={"lazy"} src={code}></img>
+         <img style={{width:"90%",maxWidth:"800px",borderRadius:"7px"}} loading={"lazy"} src={code}></img>
         </div>
       <div className='arrow-up2'></div>
         
         <div className='Skills'>
-            <div style={{fontSize:"1.5rem",maxWidth:"1000px"}}>
+            <div style={{fontSize:"1.5rem",width:"100%"}}>
           <span style={{fontSize:"1.3em"}}>
               My current <u>skills</u>:<br></br>
           </span>
             <span style={{fontSize:".8em"}}>
             {/* I am proficient in these technologies. I can solve most problems. If I'm stuck in a situation, I can research the solution, and if I don't find it, it's a nice challenge to solve.    */}
+            <div style={{display:"flex",justifyContent:"center"}}>
             <ul style={{textAlign:"left"}}>
               <li><b>Responsive: </b>understanding of UI/UX best practices and responsive design</li>
               {/* <li>excellent debugging skills with dev tools and coding best practices</li> */}
@@ -156,6 +159,7 @@ function App() {
               <li><b>Dynamic: </b>websites can be much more interesting , i love making pages come to life.</li>
 
             </ul>
+            </div>
 
             </span>       
             </div>
@@ -170,6 +174,9 @@ function App() {
             <div><div style={{width:"90px",height:"90px",display:"flex",justifyContent:"center",alignItems:"center"}}><img style={{width:"84px",borderRadius:"10px"}} className='imagen' src={ex}></img></div><div style={{textAlign:"center"}}>Express</div></div>
             <div><img className='imagenround' src={reactl}></img><div style={{textAlign:"center"}}>React</div></div>
             <div><div style={{width:"90px",height:"90px",display:"flex",justifyContent:"center",alignItems:"center"}}><img style={{width:"84px"}} className='imagen' src={node}></img></div><div style={{textAlign:"center"}}>Node</div></div>
+            <div><img className='imagen' src={next}></img><div style={{textAlign:"center"}}>Next</div></div>
+
+
             <div><img className='imagen' src={bootstrap}></img><div style={{textAlign:"center"}}>Bootstrap</div></div>
             <div><img className='imagen' src={sass}></img><div style={{textAlign:"center"}}>Sass</div></div>
             <div><img className='imagenround' src={javas}></img><div style={{textAlign:"center"}}>JavaScript (ES6+)</div></div>
@@ -198,6 +205,7 @@ function App() {
             <div style={{gap:"10px"}} className='d-flex flex-wrap justify-content-center'>
             
 
+  <div><div style={{width:"90px",height:"90px",display:"flex",justifyContent:"center",alignItems:"center"}}><img style={{width:"180px"}} className='imagen' src={graph}></img></div><div style={{textAlign:"center"}}>GraphQL</div></div>
              <div><img className='imagenround' src={reactrouterl}></img><div style={{textAlign:"center"}}>React Router</div></div> 
             <div><img className='imagen imagenround' src={axi}></img><div style={{textAlign:"center"}}>Axios</div></div>     
             <div><img className='imagen' src={red}></img><div style={{textAlign:"center"}}>Redux</div></div>     

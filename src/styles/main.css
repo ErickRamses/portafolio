@@ -133,7 +133,8 @@
   backdrop-filter:  blur(1px);
 } */
 .Header {
-  font-size: 1em;
+  font-size: 1vw;
+  font-size: calc(14px + 1vw);
   color: #64ffda;
   opacity: 0;
   -webkit-animation-name: l;
@@ -152,7 +153,8 @@
 
 .Header1 {
   color: rgba(255, 255, 255, 0.508);
-  font-size: 2em;
+  font-size: 2vw;
+  font-size: calc(14px + 2vw);
   opacity: 0;
   -webkit-animation-name: l;
           animation-name: l;
@@ -170,7 +172,8 @@
 
 .Header2 {
   color: rgb(255, 255, 255);
-  font-size: 3.5em;
+  font-size: 3.5vw;
+  font-size: calc(14px + 3.5vw);
   opacity: 0;
   -webkit-animation-name: l;
           animation-name: l;
@@ -188,7 +191,8 @@
 
 .Header3 {
   color: rgba(255, 255, 255, 0.486);
-  font-size: 2em;
+  font-size: 2vw;
+  font-size: calc(14px + 2vw);
   opacity: 0;
   -webkit-animation-name: l;
           animation-name: l;
