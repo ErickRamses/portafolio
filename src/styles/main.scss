@@ -93,7 +93,7 @@
   } */
   .Header{
     font-size: 1vw;
-    font-size:calc(14px + 1vw);
+    font-size:calc(18px + .8vw);
     color: #64ffda;
     opacity: 0;
     animation-name: l;
@@ -109,7 +109,7 @@
     color: rgba(255, 255, 255, 0.508);
     
     font-size: 2vw;
-    font-size:calc(14px + 2vw);
+    font-size:calc(18px + 1.6vw);
     opacity: 0;
     animation-name: l;
     animation-duration: .5s;
@@ -123,7 +123,7 @@
     color: rgb(255, 255, 255);
 
     font-size: 3.5vw;
-    font-size:calc(14px + 3.5vw);
+    font-size:calc(18px + 3vw);
     opacity: 0;
     animation-name: l;
     animation-duration: .5s;
@@ -137,7 +137,7 @@
     color: rgba(255, 255, 255, 0.486);
 
     font-size: 2vw;
-    font-size:calc(14px + 2vw);
+    font-size:calc(18px + 1.6vw);
     opacity: 0;
     animation-name: l;
     animation-duration: .5s;
