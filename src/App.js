@@ -168,22 +168,28 @@ function App() {
             <br></br>
 
           <div style={{gap:"10px"}} className='d-flex flex-wrap justify-content-center'>
+          <div style={{fontSize:"1.5em",width:"100%",textAlign:"center",}}>
+          <span style={{fontSize:"1.3em"}}>
+          </span>
+          Front end:
+            </div>
+          <br></br>
             {/* <div><img className='imagen' src={html5}></img><div style={{textAlign:"center"}}>html5</div></div>
             <div><img className='imagen' src={css3}></img><div style={{textAlign:"center"}}>Css3</div></div> */}
-            <div><div style={{width:"90px",height:"90px",display:"flex",justifyContent:"center",alignItems:"center"}}><img style={{width:"84px",borderRadius:"10px"}} className='imagen' src={mon}></img></div><div style={{textAlign:"center"}}>Mongodb</div></div>
-            <div><div style={{width:"90px",height:"90px",display:"flex",justifyContent:"center",alignItems:"center"}}><img style={{width:"84px",borderRadius:"10px"}} className='imagen' src={ex}></img></div><div style={{textAlign:"center"}}>Express</div></div>
+            <div><img className='imagenround' src={javas}></img><div style={{textAlign:"center"}}>JavaScript (ES6+)</div></div>
+            <div><div style={{width:"90px",height:"90px",display:"flex",justifyContent:"center",alignItems:"center"}}><img style={{width:"84px"}} className='imagen' src={ts}></img></div><div style={{textAlign:"center"}}>Typescript</div></div>
             <div><img className='imagenround' src={reactl}></img><div style={{textAlign:"center"}}>React</div></div>
-            <div><div style={{width:"90px",height:"90px",display:"flex",justifyContent:"center",alignItems:"center"}}><img style={{width:"84px"}} className='imagen' src={node}></img></div><div style={{textAlign:"center"}}>Node</div></div>
             <div><img className='imagen' src={next}></img><div style={{textAlign:"center"}}>Next</div></div>
+           
 
 
             <div><img className='imagen' src={bootstrap}></img><div style={{textAlign:"center"}}>Bootstrap</div></div>
             <div><img className='imagen' src={sass}></img><div style={{textAlign:"center"}}>Sass</div></div>
-            <div><img className='imagenround' src={javas}></img><div style={{textAlign:"center"}}>JavaScript (ES6+)</div></div>
-           
-            <div><div style={{width:"90px",height:"90px",display:"flex",justifyContent:"center",alignItems:"center"}}><img style={{width:"84px"}} className='imagen' src={ts}></img></div><div style={{textAlign:"center"}}>Typescript</div></div>
 
 
+           <div><img className='imagen imagenround' src={axi}></img><div style={{textAlign:"center"}}>Axios</div></div>     
+           <div><img className='imagen' src={red}></img><div style={{textAlign:"center"}}>Redux</div></div>     
+            <div><img className='imagenround' src={reactrouterl}></img><div style={{textAlign:"center"}}>React Router</div></div> 
             {/* <div><img className='imagenround' src={reactrouterl}></img><div style={{textAlign:"center"}}>React Router</div></div> */}
             <div><img className='imagen' src={git}></img><div style={{textAlign:"center"}}>Git</div></div>     
           </div >
@@ -198,17 +204,17 @@ function App() {
           <div style={{fontSize:"1.5em",width:"100%",textAlign:"center",}}>
           <span style={{fontSize:"1.3em"}}>
           </span>
-          other technologies
+          Back end:
             </div>
           <br></br>
             
             <div style={{gap:"10px"}} className='d-flex flex-wrap justify-content-center'>
             
 
+  <div><div style={{width:"90px",height:"90px",display:"flex",justifyContent:"center",alignItems:"center"}}><img style={{width:"84px",borderRadius:"10px"}} className='imagen' src={mon}></img></div><div style={{textAlign:"center"}}>Mongodb</div></div>
+  <div><div style={{width:"90px",height:"90px",display:"flex",justifyContent:"center",alignItems:"center"}}><img style={{width:"84px"}} className='imagen' src={node}></img></div><div style={{textAlign:"center"}}>Node</div></div>
+  <div><div style={{width:"90px",height:"90px",display:"flex",justifyContent:"center",alignItems:"center"}}><img style={{width:"84px",borderRadius:"10px"}} className='imagen' src={ex}></img></div><div style={{textAlign:"center"}}>Express</div></div>
   <div><div style={{width:"90px",height:"90px",display:"flex",justifyContent:"center",alignItems:"center"}}><img style={{width:"180px"}} className='imagen' src={graph}></img></div><div style={{textAlign:"center"}}>GraphQL</div></div>
-             <div><img className='imagenround' src={reactrouterl}></img><div style={{textAlign:"center"}}>React Router</div></div> 
-            <div><img className='imagen imagenround' src={axi}></img><div style={{textAlign:"center"}}>Axios</div></div>     
-            <div><img className='imagen' src={red}></img><div style={{textAlign:"center"}}>Redux</div></div>     
             <div><img className='imagen' src={mog}></img><div style={{textAlign:"center"}}>Mongoose</div></div>     
              
           </div>          
