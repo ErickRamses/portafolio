@@ -188,7 +188,7 @@ function App() {
             <br></br>
             <br></br>
 
-          <div style={{gap:"10px"}} className='d-flex flex-wrap justify-content-center' data-aos="fade-zoom-in">
+          <div style={{gap:"10px",overflow:"hidden"}} className='d-flex flex-wrap justify-content-center' data-aos="fade-zoom-in">
           <div style={{fontSize:"1.5em",width:"100%",textAlign:"center",}}>
           <span style={{fontSize:"1.3em"}}>
           </span>
