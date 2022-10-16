@@ -74,7 +74,7 @@ function App() {
       duration:2000,
       offset:-800,
      once:true,
-    
+     disable: 'mobile'
     })
 
     window.onscroll = function () { window.scrollTo(0, 0); };
