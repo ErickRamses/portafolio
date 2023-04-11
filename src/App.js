@@ -553,42 +553,6 @@ function App() {
               data-aos-duration="1000"
             >
               <Projects
-                marginbot="58%"
-                video={gam1}
-                video2={gam2}
-                video3={gam3}
-                title={"Gravity simulator"}
-                info={
-                  " with features like mass, time warp and more, i build this to get better at javascript i used classes for suns and planets and an array for trajectories it is a complex project that got me studying trigonometry it was hard and fun to build and debug"
-                }
-                live={"/Grav"}
-                code={"https://github.com/ErickRamses/grav"}
-              ></Projects>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-offset="-650"
-              data-aos-duration="1000"
-            >
-              <Projects
-                marginbot="58%"
-                video={pomo1}
-                video2={pomo2}
-                video3={pomo3}
-                title={"Gravity simulator"}
-                info={
-                  " with features like mass, time warp and more, i build this to get better at javascript i used classes for suns and planets and an array for trajectories it is a complex project that got me studying trigonometry it was hard and fun to build and debug"
-                }
-                live={"/Grav"}
-                code={"https://github.com/ErickRamses/grav"}
-              ></Projects>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-offset="-650"
-              data-aos-duration="1000"
-            >
-              <Projects
                 video={grav}
                 video2={grav2}
                 video3={grav3}
@@ -660,6 +624,48 @@ function App() {
               data-aos-duration="1000"
             >
               <Projects
+                onebutton={true}
+                marginbot="58%"
+                video={gam1}
+                video2={gam2}
+                video3={gam3}
+                title={"Crack The X Code -Math Riddles"}
+                info={
+                  "Math Riddles Math game, The purpose is fun so every level has a new 'mechanic'"
+                }
+                live={"/Grav"}
+                code={
+                  "https://play.google.com/store/apps/details?id=com.erick_3000.mathP"
+                }
+              ></Projects>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-offset="-650"
+              data-aos-duration="1000"
+            >
+              <Projects
+                marginbot="58%"
+                onebutton={true}
+                video={pomo1}
+                video2={pomo2}
+                video3={pomo3}
+                title={"Advanced Pomodoro Machine"}
+                info={
+                  "pomodor tecnique is a good way to divide time in blocks but these block are inflexible an ocasionate problems like stoping your inertia, over working and does not allow you to use time as efficient as you could, this app solve those problems and more"
+                }
+                live={"/Grav"}
+                code={
+                  "https://play.google.com/store/apps/details?id=com.erick_3000.pomo2"
+                }
+              ></Projects>
+            </div>
+            {/* <div
+              data-aos="fade-up"
+              data-aos-offset="-650"
+              data-aos-duration="1000"
+            >
+              <Projects
                 video={name1}
                 video2={name2}
                 video3={name3}
@@ -687,7 +693,7 @@ function App() {
                 live={"/PingPong"}
                 code={"https://github.com/ErickRamses/pingpong"}
               ></Projects>
-            </div>
+            </div> */}
           </div>
           <br></br>
 
