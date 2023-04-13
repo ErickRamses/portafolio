@@ -137,10 +137,10 @@ function App() {
             Erick Ramses
           </div>
           <div ref={Header3} className="Header3">
-            Diligent problem solver &
+            Mobile Developer &
           </div>
           <div ref={Header2} className="Header2">
-            Web developer
+            Web Developer
           </div>
         </div>
         <div className="cont">
@@ -162,6 +162,9 @@ function App() {
               an opportunity to show my potential , i love solving problems and
               if it is difficult, the better :) i normally do it for hours
               that's why i like strategy games I'm learning new things every day
+              <br></br>
+              <br></br>
+              <b>minimal payment is 3$/hr</b>
             </div>
             <img
               style={{ width: "90%", maxWidth: "800px", borderRadius: "7px" }}

@@ -46,7 +46,7 @@ const Projects = ({ video, video2, video3, title, info, live, code, two, marginb
 
         {onebutton ? <>
           <div style={{ textAlign: "left", paddingLeft: "10px", marginTop: "auto" }}>
-            <a style={{ textDecoration: "none" }} target="_blank" href={live}> <Button variant="primary"> See on PlayStore</Button></a>
+            <a style={{ textDecoration: "none" }} target="_blank" href={code}> <Button variant="primary"> See on PlayStore</Button></a>
           </div>
 
         </> : <>
