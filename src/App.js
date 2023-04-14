@@ -512,9 +512,9 @@ function App() {
                 <div style={{ textAlign: "center" }}>Mongoose</div>
               </div>
               <div
-                data-aos-offset="-550"
+                data-aos-offset="-600"
                 data-aos="fade-right"
-                data-aos-delay="700"
+                data-aos-delay="1550"
               >
                 <img className="imagenround" src={reactl}></img>
                 <div style={{ textAlign: "center" }}>React Native</div>
@@ -634,7 +634,7 @@ function App() {
                 video3={gam3}
                 title={"Crack The X Code -Math Riddles"}
                 info={
-                  "Math Riddles Math game, The purpose is fun so every level has a new 'mechanic'"
+                  "Mobile app: Math Riddles Math game, The purpose is fun so every level has a new 'mechanic'"
                 }
                 live={"/Grav"}
                 code={
@@ -655,7 +655,7 @@ function App() {
                 video3={pomo3}
                 title={"Advanced Pomodoro Machine"}
                 info={
-                  "pomodor tecnique is a good way to divide time in blocks but these block are inflexible an ocasionate problems like stoping your inertia, over working and does not allow you to use time as efficient as you could, this app solve those problems and more"
+                  "Mobile app: pomodor tecnique is a good way to divide time in blocks but these block are inflexible an ocasionate problems like stoping your inertia, over working and does not allow you to use time as efficient as you could, this app solve those problems and more"
                 }
                 live={"/Grav"}
                 code={
