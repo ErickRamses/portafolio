@@ -158,13 +158,13 @@ function App() {
               <span style={{ fontSize: "1.3em" }}>
                 <u>About</u> me:<br></br>
               </span>
-              Hello, I'm Erick Ramses, a self-taught web developer looking for
-              an opportunity to show my potential , i love solving problems and
-              if it is difficult, the better :) i normally do it for hours
-              that's why i like strategy games I'm learning new things every day
+              Hey there, I'm Erick Ramses, and I'm on a mission to delivering
+              top-tier solutions at competitive rates.I believe that obstacles
+              presents a chance for innovation, and I thrive on the satisfaction
+              of overcoming them.
               <br></br>
               <br></br>
-              <b>minimal payment is 3$/hr</b>
+              <b></b>
             </div>
             <img
               style={{ width: "90%", maxWidth: "800px", borderRadius: "7px" }}
@@ -178,7 +178,7 @@ function App() {
         <div className="Skills">
           <div style={{ fontSize: "1.5rem", width: "100%" }}>
             <span style={{ fontSize: "1.3em" }}>
-              My current <u>skills</u>:<br></br>
+              How I Help <u>You</u>:<br></br>
             </span>
             <span style={{ fontSize: ".8em" }}>
               {/* I am proficient in these technologies. I can solve most problems. If I'm stuck in a situation, I can research the solution, and if I don't find it, it's a nice challenge to solve.    */}
@@ -197,8 +197,8 @@ function App() {
                         Fast:
                       </div>
                     </b>
-                    performance such as optimizing images and minifying CSS and
-                    JavaScript
+                    ‎ performance such as optimizing images and minifying CSS
+                    and JavaScript
                   </li>
                   <li>
                     <b>
@@ -233,7 +233,7 @@ function App() {
                         ive:
                       </div>
                     </b>
-                    understanding of UI/UX best practices and responsive design
+                    ‎ i understand UI/UX best practices and responsive design
                   </li>
                   {/* <li>excellent debugging skills with dev tools and coding best practices</li> */}
                   <li>
@@ -269,8 +269,8 @@ function App() {
                         mic:
                       </div>
                     </b>
-                    websites can be much more interesting , i love making pages
-                    come to life.
+                    ‎ websites can be much more interesting , i love making
+                    pages come to life.
                   </li>
                 </ul>
               </div>
