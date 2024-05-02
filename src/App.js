@@ -131,7 +131,7 @@ function App() {
       <div className="App">
         <div style={{ padding: "20px", zIndex: "1000" }}>
           <div ref={Header} className="Header">
-            Hi, my name is{" "}
+            Hi, I'm{" "}
           </div>
           <div ref={Header1} className="Header1">
             Erick Ramses
@@ -191,7 +191,7 @@ function App() {
                         data-aos="fade-right"
                         data-aos-offset="-550"
                         data-aos-duration="500"
-                        data-aos-delay="0"
+                        data-aos-delay="200"
                         style={{ display: "inline-block" }}
                       >
                         Fast:
@@ -207,7 +207,7 @@ function App() {
                         data-aos="fade-down"
                         data-aos-offset="-550"
                         data-aos-duration="1500"
-                        data-aos-delay="50"
+                        data-aos-delay="650"
                         style={{ display: "inline-block" }}
                       >
                         Res
@@ -217,7 +217,7 @@ function App() {
                         data-aos="fade-down"
                         data-aos-offset="-550"
                         data-aos-duration="1500"
-                        data-aos-delay="100"
+                        data-aos-delay="750"
                         style={{ display: "inline-block" }}
                       >
                         pons
@@ -227,7 +227,7 @@ function App() {
                         data-aos="fade-down"
                         data-aos-offset="-550"
                         data-aos-duration="1500"
-                        data-aos-delay="150"
+                        data-aos-delay="850"
                         style={{ display: "inline-block" }}
                       >
                         ive:
@@ -242,8 +242,8 @@ function App() {
                         data-aos-once="false"
                         data-aos="flip-up"
                         data-aos-offset="-550"
-                        data-aos-duration="2000"
-                        data-aos-delay="500"
+                        data-aos-duration="2500"
+                        data-aos-delay="1800"
                         style={{ display: "inline-block" }}
                       >
                         Dy
@@ -252,8 +252,8 @@ function App() {
                         data-aos-once="false"
                         data-aos="fade-up-left"
                         data-aos-offset="-550"
-                        data-aos-duration="1000"
-                        data-aos-delay="500"
+                        data-aos-duration="1500"
+                        data-aos-delay="1800"
                         style={{ display: "inline-block" }}
                       >
                         na
@@ -262,8 +262,8 @@ function App() {
                         data-aos-once="false"
                         data-aos="fade-up-right"
                         data-aos-offset="-550"
-                        data-aos-duration="500"
-                        data-aos-delay="500"
+                        data-aos-duration="1000"
+                        data-aos-delay="1800"
                         style={{ display: "inline-block" }}
                       >
                         mic:
